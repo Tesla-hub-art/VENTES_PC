@@ -70,8 +70,67 @@
           }
             </style>
         </head>
+        <script>
+            let cart=JSON.parse(localStorage.getItem("cart")) || [];
+
+            function addTocart(name,price) {
+                cart.push({ name, price});
+                localStorage.setItem("cart",JSON.stringify(cart));
+                updateCart();
+            }
+
+            function updateCart() {
+                const list=document.getElementById("cart-items");
+                const totalSpan=document.getElementById("cart-total");
+            }
+
+            list.innerHTML ="";
+            let total =0;
+
+            cart.forEach(item=>{
+                list.innerHTML += '<li>${item.name} - $ {item.price.tolocaleString()} GNF </li>';
+                total += item.price;
+            });
+
+            totalSpan.innerText = total.toLocaleString();
+        
+            function sendCartToWhatsApp() {
+                let message = "Bonjour, je veux commander:\n";
+                let total=0;
+            }
+
+            cart.forEach(item=>{
+                message += '- ${item.name} : ${item.price.tolocaleString()} GNF \n';
+                total += item.price;
+            });
+
+            message +='\nTotal : ${total.tolocaleString()} GNF';
+            const phone ="224611476352"; // NUMERO DE TELEPHONE
+            window.open(
+                'https://wa.me/${611476352}?text=${encodeURIComponent(message)}',"_blank"
+            );
+
+            updateCart();
+
+        </script>
     </body>
      <header class="header">
+
+        <!--ONGLET MENU-->
+
+       <div class="tabs">
+        <button onclick="filterProducts('pc')">PC</button>
+        <button onclick="filterProducts('support')">Supports PC</button>
+        <button onclick="filterProducts('chaussure')">Chaussures</button>
+       </div>
+
+       <div class="categories">
+        <button onclick="filterCategory('all')">TOUS</button>
+        <button onclick="filterCategory('pc')">PC</button>
+        <button onclick="filterCategory('support')">SUPPORTS</button>
+        <button onclick="filterCategory('chaussure')">CHAUSSURES</button>
+       </div>
+
         <div class="logo">
          <h1>Ma Boutique en Ligne </h1>
          <p>Ordinateurs fiablles au meilleur prix</p>
@@ -156,6 +215,15 @@
             Commander via whatsApp
         </a>
         </div>
+        <h3>Mon panier🛒</h3>
+        <ul id="cart-items"></ul>
+
+        <p>
+            <strong>Total :</strong>
+            <span id="cart-total">0</span> GNF
+        </p>
+
+        <button onclick="sendCartToWhatsApp()">Commander le panier🛒</button>
     </div>
     </div>
     </div>
