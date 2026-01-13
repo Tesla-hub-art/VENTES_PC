@@ -72,6 +72,97 @@
           }
             </style>
         </head>
+        <div class="container">
+        <div class="produits-card pc">
+        <img src="Static/Images/hp.2.jpg"
+        alt="Photo PC">
+        <h3>HP CORE</h3>
+        <div class="prix">3.500.000 GNF</div>
+        <button onclick="addToCart('PC HP',3500000)">Ajouter au panier🛒</button>
+        <a
+    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+        </div>
+        <div class="produits-card pc">
+        <img src="Static/Images/dell.1.jpg"
+        alt="Photo chaussure">
+        <h3>DELL LATITUDE</h3>
+        <div class="prix">3.000.000 GNF</div>
+        <button onclick="addTocart('PC HP',3000000)">Ajouter au panier🛒</button>
+        <a
+    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+        </div>
+        <div class="produits-card pc">
+        <img src="Static/Images/hp4.jpg"
+        alt="Photo PC">
+        <h3>HP 10ème GENERATION CORE I5
+            SSD 512GB RAM 8 FREQUENCE 2.11ghz </h3>
+        <div class="prix">3.500.000 GNF</div>
+        <button onclick="addToCart('PC HP',3500000)">Ajouter au panier🛒</button>
+        <a
+    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+        </div>
+        <div class="produits-card pc">
+        <img src="Static/Images/hp5.jpg"
+        alt="Photo PC">
+        <h3>HP 8ème GENERATION CORE I5 G6
+            SSD 256GB RAM 8 FREQUENCE 1.80ghz </h3>
+        <div class="prix">2.800.000 GNF</div>
+        <button onclick="addToCart('PC HP',2800000)">Ajouter au panier🛒</button>
+        <a
+    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+        </div>
+        <div class="produits-card pc">
+        <img src="Static/Images/hp6.jpg"
+        alt="Photo PC">
+        <h3>HP 8ème GENERATION CORE I5 G5
+            SSD 256GB RAM 8 FREQUENCE 2.50ghz </h3>
+        <div class="prix">2.600.000 GNF</div>
+        <button onclick="addToCart('PC HP',2600000)">Ajouter au panier🛒</button>
+        <a
+    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+        </div>
+    <div class="produits-card pc">
+        <img src="Static/Images/hp10.jpg"
+        alt="Photo PC">
+        <h3>HP 12ème GENERATION CORE I7
+            SSD 512GB RAM 16 FREQUENCE 1.90ghz </h3>
+        <div class="prix">5.800.000 GNF</div>
+        <button onclick="addToCart('PC HP',3500000)">Ajouter au panier🛒</button>
+
+        <a
+    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+        </div>
+        <div id="cart">
+        <h3>Mon panier🛒</h3>
+        <ul id="cart-items"></ul>
+
+        <p>
+            <strong>Total :</strong>
+            <span id="cart-total">0</span> GNF
+        </p>
+
+        <button onclick="sendCartToWhatsApp()">Commander le panier🛒</button> 
+    </div>
+    </div>
+    </div>
          <script>
             function filterCategory(category) {
                 const produits=document.querySelectorAll('.produits-card');
@@ -155,98 +246,5 @@
             </nav>
 
      </header>
-
-      <div class="container">
-        <div class="produits-card pc">
-        <img src="Static/Images/hp.2.jpg"
-        alt="Photo PC">
-        <h3>HP CORE</h3>
-        <div class="prix">3.500.000 GNF</div>
-        <button onclick="addToCart('PC HP',3500000)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-        <div class="produits-card pc">
-        <img src="Static/Images/dell.1.jpg"
-        alt="Photo chaussure">
-        <h3>DELL LATITUDE</h3>
-        <div class="prix">3.000.000 GNF</div>
-        <button onclick="alert('test ok')"">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-        <div class="produits-card pc">
-        <img src="Static/Images/hp4.jpg"
-        alt="Photo PC">
-        <h3>HP 10ème GENERATION CORE I5
-            SSD 512GB RAM 8 FREQUENCE 2.11ghz </h3>
-        <div class="prix">3.500.000 GNF</div>
-        <button onclick="addToCart('PC HP',3500000)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-        <div class="produits-card pc">
-        <img src="Static/Images/hp5.jpg"
-        alt="Photo PC">
-        <h3>HP 8ème GENERATION CORE I5 G6
-            SSD 256GB RAM 8 FREQUENCE 1.80ghz </h3>
-        <div class="prix">2.800.000 GNF</div>
-        <button onclick="addToCart('PC HP',2800000)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-        <div class="produits-card pc">
-        <img src="Static/Images/hp6.jpg"
-        alt="Photo PC">
-        <h3>HP 8ème GENERATION CORE I5 G5
-            SSD 256GB RAM 8 FREQUENCE 2.50ghz </h3>
-        <div class="prix">2.600.000 GNF</div>
-        <button onclick="addToCart('PC HP',2600000)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-    <div class="produits-card pc">
-        <img src="Static/Images/hp10.jpg"
-        alt="Photo PC">
-        <h3>HP 12ème GENERATION CORE I7
-            SSD 512GB RAM 16 FREQUENCE 1.90ghz </h3>
-        <div class="prix">5.800.000 GNF</div>
-        <button onclick="addToCart('PC HP',3500000)">Ajouter au panier🛒</button>
-
-        <a
-    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-        <div id="cart">
-        <h3>Mon panier🛒</h3>
-        <ul id="cart-items"></ul>
-
-        <p>
-            <strong>Total :</strong>
-            <span id="cart-total">0</span> GNF
-        </p>
-
-        <button onclick="sendCartToWhatsApp()">Commander le panier🛒</button> 
-    </div>
-    </div>
-    </div>
-
     </body>
     </html>
