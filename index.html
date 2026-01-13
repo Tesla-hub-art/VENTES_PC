@@ -92,6 +92,7 @@
             let cart=JSON.parse(localStorage.getItem("cart")) || [];
 
             function addTocart(name,price) {
+                alert("Ajout réussi ✅")
                 cart.push({ name, price});
                 localStorage.setItem("cart",JSON.stringify(cart));
                 updateCart();
