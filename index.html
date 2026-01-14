@@ -235,12 +235,17 @@
             list.innerHTML ="";
             let total =0;
 
-            cart.forEach(item=>{
-                list.innerHTML += '<li>${item.name} - ${item.price.toLocaleString()} GNF</li>';
+            cart.forEach((item,index) => {
+                const li =document.createElement("li");
+                li.textContent = '${item.name} - ${item.price.toLocaleString()} GNF';
+                list.appendChild(li);
+
+                // On additionne le prix au total
+
                 total += item.price;
             });
 
-            totalSpan.innerText = total.toLocaleString() +"GNF";
+            totalSpan.innerText=total.toLocaleString()+"GNF" ;
 
             // LA FONCTION POUR DIRIGER LE PANIER VERS WHATSAPP
         
