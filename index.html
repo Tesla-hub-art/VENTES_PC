@@ -210,14 +210,14 @@
 
             function goToCart() {
 
-                document.getElementById("cart").srollIntoView({behavior:"smooth"});
+                document.getElementById("cart").scrollIntoView({behavior:"smooth"});
             }
             let cart=JSON.parse(localStorage.getItem("cart")) || [];
 
             // LA FONCTION POUR AJOUTER AU PANIER
 
             function addTocart(name,price) {
-                const card =button.closet(".produits-card");
+                const card =button.closest(".produits-card");
 
                 const name = card.dataset.nom;
                 const price=parseInt(card.dataset.prix);
