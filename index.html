@@ -237,7 +237,7 @@
 
             cart.forEach((item,index) => {
                 const li =document.createElement("li");
-                li.textContent = `${item.name} - ${item.price.toLocaleString()} GNF `;
+                li.textContent = `${item.name} - ${item.price.toLocaleString()} GNF`;
                 list.appendChild(li);
 
                 // On additionne le prix au total
@@ -245,14 +245,14 @@
                 total += item.price;
             });
 
-            totalSpan.innerText=total.toLocaleString()+"GNF";
+            totalSpan.innerText = total.toLocaleString() + " GNF";
              }
 
             // LA FONCTION POUR DIRIGER LE PANIER VERS WHATSAPP
         
             function sendCartToWhatsApp() {
                 let message = "Bonjour, je veux commander:\n";
-                let total=0;
+                let total = 0;
             }
 
             cart.forEach(item=>{
