@@ -100,7 +100,7 @@
             <a href="#produits">Produits</a>
             <a href="#contact">Contact</a>
             <a href="https://wa.me/611476352" target="_blank">WhatsApp</a>
-            </nav>
+        </nav>
 
      </header>
         </head>
@@ -121,7 +121,7 @@
         <h3>HP 10ème GENERATION CORE I5</h3>
             <P>SSD 512GB RAM 8 FREQUENCE 2.11ghz</P>
         <div class="prix">3.500.000 GNF</div>
-        <button onclick="addToCart('this')">Ajouter au panier🛒</button>
+        <button onclick="addToCart(this)">Ajouter au panier🛒</button>
         <a
     href="https://wa.me/611476352?text=Bonjour,je veux Commander ce PC" 
     class="btn-whatsapp" target="_blank">
@@ -141,7 +141,7 @@
         <h3>CHAUSSURES NIKE </h3>
             <P>ULTRA CONFORTABLE ET RESISTANT A L'EAU</P>
         <div class="prix">450.000 GNF</div>
-        <button onclick="addToCart('this')">Ajouter au panier🛒</button>
+        <button onclick="addToCart(this)">Ajouter au panier🛒</button>
         <a
     href="https://wa.me/611476352?text=Bonjour,je veux Commander cette chaussure" 
     class="btn-whatsapp" target="_blank">
@@ -161,7 +161,7 @@
         <h3>SUPPORT EN FER ULTRA RESISTANT</h3>
             <P>POUR PERMETTRE AU PC DE SE TENIR</P>
         <div class="prix">180.000 GNF</div>
-        <button onclick="addToCart('this')">Ajouter au panier🛒</button>
+        <button onclick="addToCart(this)">Ajouter au panier🛒</button>
         <a
     href="https://wa.me/611476352?text=Bonjour,je veux Commander ce support" 
     class="btn-whatsapp" target="_blank">
@@ -210,7 +210,7 @@
 
             function goToCart() {
 
-                documeent.getElementById("cart").srollIntoView({behavior:"smooth"});
+                document.getElementById("cart").srollIntoView({behavior:"smooth"});
             }
             let cart=JSON.parse(localStorage.getItem("cart")) || [];
 
