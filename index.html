@@ -212,16 +212,15 @@
 
                 document.getElementById("cart").scrollIntoView({behavior:"smooth"});
             }
-            let cart=JSON.parse(localStorage.getItem("cart")) || [];
 
             // LA FONCTION POUR AJOUTER AU PANIER
 
-            function addTocart(name,price) {
+            function addTocart(button) {
                 const card =button.closest(".produits-card");
 
                 const name = card.dataset.nom;
                 const price=parseInt(card.dataset.prix);
-                cart.push({ name, price});
+                cart.push({ name:name, price:price});
                 localStorage.setItem("cart",JSON.stringify(cart));
                 updateCart();
             }
