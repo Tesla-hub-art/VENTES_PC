@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
      <meta name="viewport"
      content="width=device-width,initial-scale=1.0">
-    <title>Marché en ligne</title>
+
+    <!--NOM DU MARCHE SUR L'ONGLET SITE-->
+    
+     <title>Marché en ligne</title>
     <style>
-        
+
+        /* STYLE DU SITE OU ENJOLIEMENT DU SITE*/
 
         body {
             font-family: 'Segoe UI',Arial sans-serif;
@@ -73,10 +77,14 @@
             </style>
             <header class="header">
 
+        <!--ENTETE ET NOM DU MARCHE EN LIGNE-->
+            
         <div class="logo">
          <h1>SHOPY</h1>
          <p>Ordinateurs fiables au meilleur prix</p>
          </div>
+
+         <!--CLASSEMENT DES PRODUITS PAR CATEGORIE-->
 
         <div class="categories">
         <button onclick="filterCategory('all')">TOUT</button>
@@ -86,6 +94,8 @@
         <button onclick="goToCart()">MON PANIER 🛒</button>
        </div>
 
+       <!--LE MENU DE NAVIGATION-->
+
          <nav class="nav">
             <a href="#produits">Produits</a>
             <a href="#contact">Contact</a>
@@ -94,32 +104,22 @@
 
      </header>
         </head>
+
+        <!--SCRIPT POUR AJOUTER DES PRODUITS-->
+
         <div class="container">
-        <div class="produits-card pc"
-         data-nom="PC HP"
-        data-prix="3500000"
-        data-categorie="pc"
-        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/dell.1.jpg">>
-        <img src="Static/Images/dell.1.jpg"
-        alt="Photo chaussure">
-        <h3>DELL LATITUDE</h3>
-        <div class="prix">3000000 GNF</div>
-        <button onclick="addTocart('PC HP',3000000 )">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,je veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
+
+        <!--CATEGORIE PC, PRODUIT 1-->
+
         <div class="produits-card"
         data-nom="PC HP"
-        data-prix="3500000"
+        data-prix="3500000" 
         data-categorie="pc"
         data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/hp4.jpg">
         <img src="Static/Images/hp4.jpg"
         alt="PC HP">
-        <h3>HP 10ème GENERATION CORE I5
-            SSD 512GB RAM 8 FREQUENCE 2.11ghz </h3>
+        <h3>HP 10ème GENERATION CORE I5</h3>
+            <P>SSD 512GB RAM 8 FREQUENCE 2.11ghz</P>
         <div class="prix">3.500.000 GNF</div>
         <button onclick="addToCart('this')">Ajouter au panier🛒</button>
         <a
@@ -128,72 +128,73 @@
             Commander via whatsApp
         </a>
         </div>
-        <div class="produits-card pc"
-         data-nom="PC HP"
-        data-prix="3500000"
-        data-categorie="pc"
-        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/hp5.jpg">>
-        <img src="Static/Images/hp5.jpg"
-        alt="Photo PC">
-        <h3>HP 8ème GENERATION CORE I5 G6
-            SSD 256GB RAM 8 FREQUENCE 1.80ghz </h3>
-        <div class="prix">2800000 GNF</div>
-        <button onclick="addToCart('PC HP',2800000)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,je veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-        <div class="produits-card pc"
-         data-nom="PC HP"
-        data-prix="3500000"
-        data-categorie="pc"
-        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/hp6.jpg">>
-        <img src="Static/Images/hp6.jpg"
-        alt="Photo PC">
-        <h3>HP 8ème GENERATION CORE I5 G5
-            SSD 256GB RAM 8 FREQUENCE 2.50ghz </h3>
-        <div class="prix">2600000 GNF</div>
-        <button onclick="addToCart('PC HP',2600000)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,je veux Commander ce produit" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-    <div class="produits-card pc"
-     data-nom="PC HP"
-        data-prix="3500000"
-        data-categorie="pc"
-        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/hp10.jpg">>
-        <img src="Static/Images/hp10.jpg"
-        alt="Photo PC">
-        <h3>HP 12ème GENERATION CORE I7
-            SSD 512GB RAM 16 FREQUENCE 1.90ghz </h3>
-        <div class="prix">5.800.000 GNF</div>
-        <button onclick="addToCart('PC HP',3500000)">Ajouter au panier🛒</button>
 
+        <!--CATEGORIE CHAUSSURES, PRODUIT 1-->
+
+        <div class="produits-card"
+        data-nom="PC HP"
+        data-prix="450000" 
+        data-categorie="chaussure"
+        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/c2.jpg">
+        <img src="Static/Images/c2.jpg"
+        alt="CHAUSSURES NIKE">
+        <h3>CHAUSSURES NIKE </h3>
+            <P>ULTRA CONFORTABLE ET RESISTANT A L'EAU</P>
+        <div class="prix">450.000 GNF</div>
+        <button onclick="addToCart('this')">Ajouter au panier🛒</button>
         <a
     href="https://wa.me/611476352?text=Bonjour,je veux Commander ce produit" 
     class="btn-whatsapp" target="_blank">
             Commander via whatsApp
         </a>
         </div>
+
+        <!--CATEGORIE SUPPORT, PRODUIT 1-->
+
+        <div class="produits-card"
+        data-nom="SUPPORT_PC"
+        data-prix="180000" 
+        data-categorie="support"
+        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/s2.jpg">
+        <img src="Static/Images/s2.jpg"
+        alt="PC HP">
+        <h3>SUPPORT EN FER ULTRA RESISTANT</h3>
+            <P>POUR PERMETTRE AU PC DE SE TENIR</P>
+        <div class="prix">180.000 GNF</div>
+        <button onclick="addToCart('this')">Ajouter au panier🛒</button>
+        <a
+    href="https://wa.me/611476352?text=Bonjour,je veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+        </div>
+
+        <!--MON PANIER-->
+
         <div id="cart">
         <h3>Mon panier🛒</h3>
         <ul id="cart-items"></ul>
+
+        <!--AFFICHER LE TOTAL DES SOMMES DANS LE PANIER-->
 
         <p>
             <strong>Total :</strong>
             <span id="cart-total">0</span> GNF
         </p>
 
+        <!--COMMANDER LE PANIER-->
+
         <button onclick="sendCartToWhatsApp()">Commander le panier🛒</button> 
     </div>
     </div>
     </div>
+
+                     <!--CODE POUR LE JAVASCRIPT-->
+
          <script>
+
+            // LA FONCTION POUR FILTRER PAR CATEGORIE
+
             function filterCategory(category) {
                 const produits=document.querySelectorAll('.produits-card');
 
@@ -206,17 +207,27 @@
                 });
             }
 
+            // LA FONCTION POUR REDIRIGER VERS LE PANIER
+
             function goToCart() {
 
                 documeent.getElementById("cart").srollIntoView({behavior:"smooth"});
             }
             let cart=JSON.parse(localStorage.getItem("cart")) || [];
 
+            // LA FONCTION POUR AJOUTER AU PANIER
+
             function addTocart(name,price) {
+                const card =button.closet(".produits-card");
+
+                const name = card.dataset.nom;
+                const price=parseInt(card.dataset.prix);
                 cart.push({ name, price});
                 localStorage.setItem("cart",JSON.stringify(cart));
                 updateCart();
             }
+
+            // LA FONCTION POUR ENREGISTRER LA PANIER
 
             function updateCart() {
                 const list=document.getElementById("cart-items");
@@ -227,11 +238,13 @@
             let total =0;
 
             cart.forEach(item=>{
-                list.innerHTML += '<li>${item.name} - $ {item.price.tolocaleString()} GNF </li>';
+                list.innerHTML += '<li>${item.name} - ${item.price.toLocaleString()} GNF</li>';
                 total += item.price;
             });
 
-            totalSpan.innerText = total.toLocaleString();
+            totalSpan.innerText = total.toLocaleString() +"GNF";
+
+            // LA FONCTION POUR DIRIGER LE PANIER VERS WHATSAPP
         
             function sendCartToWhatsApp() {
                 let message = "Bonjour, je veux commander:\n";
@@ -239,11 +252,11 @@
             }
 
             cart.forEach(item=>{
-                message += '- ${item.name} : ${item.price.tolocaleString()} GNF \n';
+                message += '- ${item.name} : ${item.price.toLocaleString()} GNF \n';
                 total += item.price;
             });
 
-            message +='\nTotal : ${total.tolocaleString()} GNF';
+            message +='\nTotal : ${total.toLocaleString()} GNF';
             const phone ="224611476352"; // NUMERO DE TELEPHONE
             window.open(
                 'https://wa.me/${611476352}?text=${encodeURIComponent(message)}',"_blank"
