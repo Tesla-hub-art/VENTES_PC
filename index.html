@@ -260,7 +260,7 @@
                 let total = 0;
                 cart.forEach((item,index) => {
                 const li =document.createElement("li");
-                li.textContent = `${item.name} - ${item.price.toLocalestring()} GNF`;
+                li.textContent = `${item.name} - ${item.price.toLocaleString()} GNF`;
                 list.appendChild(li);
 
                 // On additionne le prix au total
@@ -268,7 +268,7 @@
                 total += item.price;
                 });
 
-                totalSpan.innerText = total.toLocalestring() + " GNF";
+                totalSpan.innerText = total.toLocaleString() + " GNF";
              }
 
             // LA FONCTION POUR DIRIGER LE PANIER VERS WHATSAPP
@@ -279,12 +279,12 @@
             
 
                 cart.forEach(item=>{
-                message += `- ${item.name} : ${item.price.toLocalestring()} GNF\n`;
+                message += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
                 total += item.price;
                 });
             
 
-                message +=`\*Total de la commande : ${total.toLocalestring()} GNF*`;
+                message +=`\*Total de la commande : ${total.toLocaleString()} GNF*`;
                 message += "\n\nProvenance : Site E-commerce SHOPY";
                 const phone ="224611476352"; // NUMERO DE TELEPHONE
                 const url =`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
