@@ -191,6 +191,10 @@
                      <!--CODE POUR LE JAVASCRIPT-->
 
          <script>
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            if(Array.isArray(cart)) {
+                cart = [];
+            }
 
             // LA FONCTION POUR FILTRER PAR CATEGORIE
 
@@ -253,12 +257,13 @@
             function sendCartToWhatsApp() {
                 let message = "Bonjour, je viens de votre site SHOPY et je souhaite commander les articles suivants:\n\n";
                 let total = 0;
-            }
+            
 
             cart.forEach(item=>{
                 message += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
                 total += item.price;
             });
+            
 
             message +=`\*nTotal de la commande : ${total.toLocaleString()} GNF*`;
             message += "\n\nProvenance : Site E-commerce SHOPY";
@@ -267,6 +272,7 @@
             window.open(url,"_blank");
 
             updateCart();
+            };
 
         </script>
     </body>
