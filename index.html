@@ -251,20 +251,20 @@
             // LA FONCTION POUR DIRIGER LE PANIER VERS WHATSAPP
         
             function sendCartToWhatsApp() {
-                let message = "Bonjour, je veux commander:\n";
+                let message = "Bonjour, je viens de votre site SHOPY et je souhaite commander les articles suivants:\n\n";
                 let total = 0;
             }
 
             cart.forEach(item=>{
-                message += `- ${item.name} : ${item.price.toLocaleString()} GNF \n`;
+                message += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
                 total += item.price;
             });
 
-            message +=`\nTotal : ${total.toLocaleString()} GNF`;
+            message +=`\*nTotal de la commande : ${total.toLocaleString()} GNF*`;
+            message += "\n\nProvenance : Site E-commerce SHOPY";
             const phone ="224611476352"; // NUMERO DE TELEPHONE
-            window.open(
-                'https://wa.me/${611476352}?text=${encodeURIComponent(message)}',"_blank"
-            );
+            const url =`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url,"_blank");
 
             updateCart();
 
