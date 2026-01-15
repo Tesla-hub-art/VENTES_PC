@@ -5,12 +5,12 @@
      <meta name="viewport"
      content="width=device-width,initial-scale=1.0">
 
-    <!--NOM DU MARCHE SUR L'ONGLET SITE-->
+    <!--NOM DU MARCHE SUR L'ONGLET SITE ✅-->
     
      <title>Marché en ligne</title>
     <style>
 
-        /* STYLE DU SITE OU ENJOLIEMENT DU SITE*/
+        /* STYLE DU SITE OU ENJOLIEMENT DU SITE ✅*/
 
         body {
             font-family: 'Segoe UI',Arial sans-serif;
@@ -77,14 +77,14 @@
             </style>
             <header class="header">
 
-        <!--ENTETE ET NOM DU MARCHE EN LIGNE-->
+        <!--ENTETE ET NOM DU MARCHE EN LIGNE ✅-->
             
         <div class="logo">
          <h1>SHOPY</h1>
          <p>Ordinateurs fiables au meilleur prix</p>
          </div>
 
-         <!--CLASSEMENT DES PRODUITS PAR CATEGORIE-->
+         <!--CLASSEMENT DES PRODUITS PAR CATEGORIE ✅-->
 
         <div class="categories">
         <button onclick="filterCategory('all')">TOUT</button>
@@ -105,7 +105,7 @@
      </header>
         </head>
 
-        <!--SCRIPT POUR AJOUTER DES PRODUITS-->
+        <!--SCRIPT POUR AJOUTER DES PRODUITS ✅-->
 
     <div class="container">
 
@@ -233,11 +233,11 @@
            
 
             list.innerHTML ="";
-            let total =0;
+            let total = 0;
 
             cart.forEach((item,index) => {
                 const li =document.createElement("li");
-                li.textContent = `${item.name} - ${item.price.toLocaleString()} GNF`;
+                li.textContent =`${item.name} - ${item.price.toLocaleString()} GNF`;
                 list.appendChild(li);
 
                 // On additionne le prix au total
@@ -256,11 +256,11 @@
             }
 
             cart.forEach(item=>{
-                message += '- ${item.name} : ${item.price.toLocaleString()} GNF \n';
+                message += `- ${item.name} : ${item.price.toLocaleString()} GNF \n`;
                 total += item.price;
             });
 
-            message +='\nTotal : ${total.toLocaleString()} GNF';
+            message +=`\nTotal : ${total.toLocaleString()} GNF`;
             const phone ="224611476352"; // NUMERO DE TELEPHONE
             window.open(
                 'https://wa.me/${611476352}?text=${encodeURIComponent(message)}',"_blank"
