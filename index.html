@@ -11,6 +11,26 @@
     <style>
 
         /* STYLE DU SITE OU ENJOLIEMENT DU SITE ✅*/
+        .produits-card button {
+            background: linear-gradient(135deg,#6e8efb,#a777e3);/* D"gradé stylé*/
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;/* prend toute la largeur de la carte*/
+            font-weight: 600;
+            margin-top: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .produits-card button:hover {
+            transform: scale(1.02); /*grossit légèrement*/
+            box-shadow: 0 5px 15px rgba(110, 142, 251, 0.4);
+        }
+        .produits-card button:active {
+            transform: scale(0.98); /*Effet d'enfoncement au clic*/
+        }
 
         body {
             font-family: 'Segoe UI',Arial sans-serif;
@@ -86,7 +106,7 @@
 
          <!--CLASSEMENT DES PRODUITS PAR CATEGORIE ✅-->
 
-        <div class="categories">
+        <div class="categories" style="text-align: center; margin-bottom: 20px;">
         <button onclick="filterCategory('all')">TOUT</button>
         <button onclick="filterCategory('pc')">PC</button>
         <button onclick="filterCategory('support')">SUPPORTS</button>
@@ -179,7 +199,7 @@
 
         <p>
             <strong>Total :</strong>
-            <span id="cart-total">0</span> GNF
+            <span id="cart-total">0</span>
         </p>
 
         <!--COMMANDER LE PANIER-->
@@ -264,7 +284,7 @@
                 });
             
 
-                message +=`\*nTotal de la commande : ${total.toLocalestring()} GNF*`;
+                message +=`\*Total de la commande : ${total.toLocalestring()} GNF*`;
                 message += "\n\nProvenance : Site E-commerce SHOPY";
                 const phone ="224611476352"; // NUMERO DE TELEPHONE
                 const url =`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
