@@ -192,7 +192,7 @@
 
          <script>
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
-            if(Array.isArray(cart)) {
+            if(!Array.isArray(cart)) {
                 cart = [];
             }
 
@@ -236,20 +236,19 @@
                 const totalSpan=document.getElementById("cart-total");
            
 
-            list.innerHTML ="";
-            let total = 0;
-
-            cart.forEach((item) => {
+                list.innerHTML ="";
+                let total = 0;
+                cart.forEach((item) => {
                 const li =document.createElement("li");
-                li.textContent = `${item.name} - ${item.price.toLocaleString()} GNF`;
+                li.textContent = `${item.name} - ${item.price.toLocalestring()} GNF`;
                 list.appendChild(li);
 
                 // On additionne le prix au total
 
                 total += item.price;
-            });
+                });
 
-            totalSpan.innerText = total.toLocaleString() + " GNF";
+                totalSpan.innerText = total.toLocalestring() + " GNF";
              }
 
             // LA FONCTION POUR DIRIGER LE PANIER VERS WHATSAPP
@@ -259,19 +258,19 @@
                 let total = 0;
             
 
-            cart.forEach(item=>{
-                message += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
+                cart.forEach(item=>{
+                message += `- ${item.name} : ${item.price.toLocalestring()} GNF\n`;
                 total += item.price;
-            });
+                });
             
 
-            message +=`\*nTotal de la commande : ${total.toLocaleString()} GNF*`;
-            message += "\n\nProvenance : Site E-commerce SHOPY";
-            const phone ="224611476352"; // NUMERO DE TELEPHONE
-            const url =`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            window.open(url,"_blank");
+                message +=`\*nTotal de la commande : ${total.toLocalestring()} GNF*`;
+                message += "\n\nProvenance : Site E-commerce SHOPY";
+                const phone ="224611476352"; // NUMERO DE TELEPHONE
+                const url =`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+                window.open(url,"_blank");
 
-            updateCart();
+                updateCart();
             };
 
         </script>
