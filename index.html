@@ -188,7 +188,48 @@
           .categories button:active {
             transform: scale(0.95);
           }
-            </style>
+          /*- Container pour aligner les boutons*/
+
+          .cart-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+          }
+          .btn-vider, .btn-commander {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+          }
+
+          .btn-vider {
+            background-color: #f8d7da;
+            color: #721c24;
+          }
+
+          .btn-vider:hover {
+            background-color: #f5c6cb;
+            transform: scale(0.98);/* Petit effet de clic*/
+          }
+
+          .btn-commander {
+            background: linear-gradient(135deg,#128C7E,#075E54);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+          }
+
+          .btn-commander:hover {
+            background: linear-gradient(135deg,#128C7E,#075E54);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+            transform: translateY(-2px);/*Soulèvement pro*/
+          }
+
+
+                     </style>
             <header class="header">
 
         <!--ENTETE ET NOM DU MARCHE EN LIGNE ✅-->
@@ -298,13 +339,14 @@
 
         <!--SUPPRIMER  LE PANIER-->
 
-        <button onclick="clearCart()" style="background-color: red;color: white; border: none; padding: 5px; cursor: pointer;margin-bottom: 10px;" class="btn-vider">Vider tout le panier🛒</button> 
+        <div class="cart-actions">
+        <button onclick="clearCart()" class="btn-vider">Vider le panier🛒</button> 
 
         <!--COMMANDER LE PANIER-->
 
         <button onclick="sendCartToWhatsApp()">Commander le panier🛒</button> 
         </div>
-    </div>
+        </div>
     
     <div style="height: 150px; overflow: hidden; margin-top: 50px;">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
