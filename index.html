@@ -98,7 +98,7 @@
             background-color: #2c3e50; /* Couleur sombre pro*/
             color: white;
             padding: 40px 20px 20px;
-            margin-top: 50px;
+            margin-top: 0px;
             font-family: sans-serif;
           }
           .footer-content {
@@ -137,6 +137,38 @@
             padding-top: 1px solid #555;
             font-size: 14px;
             color: #bdc3c7;
+          }
+
+          .categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px;
+            flex-wrap: wrap;
+          }
+
+          .categories button {
+            background: #f8f9fa;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 10px 25px;
+            border-radius: 50px; /*Boutons Arrondis Pillule*/
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+          }
+          .categories.button:hover {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+            transform: translateY(-3px);/* Petit saut vers le haut*/
+            box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+          }
+          .categories button:active {
+            transform: scale(0.95);
           }
             </style>
             <header class="header">
@@ -256,6 +288,12 @@
         </div>
     </div>
     
+    <div style="height: 150px; overflow: hidden; margin-top: 50px;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#2c3e50;"></path>
+        </svg>
+    </div>
+
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
