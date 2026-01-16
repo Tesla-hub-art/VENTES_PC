@@ -152,7 +152,7 @@
         <!--CATEGORIE CHAUSSURES, PRODUIT 1-->
 
         <div class="produits-card chaussure"
-        data-nom="PC HP"
+        data-nom="CHAUSSURES NIKE"
         data-prix="450000" 
         data-categorie="chaussure"
         data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/c2.jpg">
@@ -278,6 +278,13 @@
             // LA FONCTION POUR DIRIGER LE PANIER VERS WHATSAPP
         
             function sendCartToWhatsApp() {
+
+                // SI LE PANIER EST VIDE
+
+                if (cart.lenght===0) {
+                    alert("Le panier est vide ! Veuillez ajouter des produits avant de passer une commande.");
+                    return;
+                }
                 let message = "Bonjour, je viens de votre site SHOPY et je souhaite commander les articles suivants:\n\n";
                 let total = 0;
             
@@ -303,6 +310,20 @@
                 cart.splice(index, 1); // Supprime l'article à la position index
                 localStorage.setItem("cart",JSON.stringify(cart));
                 updateCart();
+            };
+
+            // LA FONCTION POUR DIRE AJOUTER UN PRODUIT SI RIEN DANS LE PRODUIT
+
+            function orderSingleProduct(name, price) {
+                if(!name || !price) {
+                    alert("Aucune commande faite ! Veuillez selectionner un produit valide.");
+                    return;
+                }
+
+                let message = `SHOPY: Bonjour, je souhaite commander uniquement ce produit:\n-${name}: ${price.toLocaleString()} GNF`;
+                const phone="224611476352";
+                const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+                window.open(url, "_blank");
             }
 
             // FONCTION POUR SUPPRIMER TOUT LE PANIER
