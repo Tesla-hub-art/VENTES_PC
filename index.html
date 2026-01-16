@@ -94,6 +94,50 @@
             .btn-whatsapp:hover{
             background:#128C7E;
           }
+          .site-footer {
+            background-color: #2c3e50; /* Couleur sombre pro*/
+            color: white;
+            padding: 40px 20px 20px;
+            margin-top: 50px;
+            font-family: sans-serif;
+          }
+          .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+
+          .footer-section h4 {
+            color: #3498db;/*Bleu pro pour les titres*/
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+          }
+
+          .footer-section ul {
+            list-style: none;
+            padding: 0;
+          }
+
+          .footer-section ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: 0.3s;
+          }
+
+          .footer-section ul li a :hover {
+            color: white;
+          }
+
+          .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 1px solid #555;
+            font-size: 14px;
+            color: #bdc3c7;
+          }
             </style>
             <header class="header">
 
@@ -211,6 +255,35 @@
         <button onclick="sendCartToWhatsApp()">Commander le panier🛒</button> 
         </div>
     </div>
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SHOPY</h4>
+                <p> Votre partenaire de confiance pour l'informatique et la mode en Guinée.</p>
+
+            </di>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📞 +224 611 47 63 52</p>
+                <p>📍 Conakry, Guinée</p>
+            </div>
+
+            <div class="footer-section">
+                <p>Liens utiles</p>
+                <ul>
+                    <li><a href="#" onclick="filterCategory('all')">Tous les produits</a></li>
+                    <li><a href="#" onclick="goToCart()">Mon panier</a></li>
+                </ul>
+            </div>
+            </div>
+                <div class="footer-bottom">
+                    <p>&copy;2026 SHOPY - Tous droits réservés.</p>
+                </div>
+            </div>
+                </footer>
+
 
                      <!--CODE POUR LE JAVASCRIPT-->
 
@@ -281,7 +354,7 @@
 
                 // SI LE PANIER EST VIDE
 
-                if (cart.lenght===0) {
+                if (cart.lenght === 0) {
                     alert("Le panier est vide ! Veuillez ajouter des produits avant de passer une commande.");
                     return;
                 }
