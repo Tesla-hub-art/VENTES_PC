@@ -11,6 +11,13 @@
     <style>
 
         /* STYLE DU SITE OU ENJOLIEMENT DU SITE ✅*/
+        .produits-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 15px;
+            transition: 0.3s;
+        }
         .produits-card button {
             background: linear-gradient(135deg,#6e8efb,#a777e3);/* D"gradé stylé*/
             color: white;
@@ -36,12 +43,8 @@
             font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f7f6;
             margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
             padding: 20px;
-                
+            color: #333;       
         }
         header {
             text-align: center;
@@ -453,7 +456,7 @@
                 // SI LE PANIER EST VIDE
 
                 if (cart.lenght === 0) {
-                    alert("Le panier est vide ! Veuillez ajouter des produits avant de passer une commande.");
+                    alert("Le panier est vide ! Veuillez ajouter des produits avant de passer une commande");
                     return;
                 }
                 let message = "Bonjour, je viens de votre site SHOPY et je souhaite commander les articles suivants:\n\n";
