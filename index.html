@@ -290,7 +290,25 @@
                 const url =`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
                 window.open(url,"_blank");
 
+               // updateCart();
+            };
+
+            //CREATION DE LA FONCTION POUR SUPPRIMER UN PRODUIT DANS UN APNIER
+
+            function removeItem(index) {
+                cart.splice(index, 1); // Supprime l'article à la position index
+                localStorage.setItem("cart",JSON.stringify(cart));
                 updateCart();
+            }
+
+            // FONCTION POUR SUPPRIMER TOUT LE PANIER
+
+            function clearCart() {
+                if(confirm("Voulez-vous vraiment vider tout le panier ?")) {
+                    cart = [];
+                    localStorage.removeItem("cart");
+                    updateCart();
+                };
             };
 
         </script>
