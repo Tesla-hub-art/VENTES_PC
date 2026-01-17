@@ -413,7 +413,7 @@
                 cart = [];
             }
 
-            // LA FONCTION POUR FILTRER PAR CATEGORIE
+            // LA FONCTION POUR FILTRER PAR CATEGORIE✅
 
             function filterCategory(category) {
                 const produits=document.querySelectorAll('.produits-card');
@@ -427,14 +427,14 @@
                 });
             }
 
-            // LA FONCTION POUR REDIRIGER VERS LE PANIER
+            // LA FONCTION POUR REDIRIGER VERS LE PANIER✅
 
             function goToCart() {
 
                 document.getElementById("cart").scrollIntoView({behavior:"smooth"});
             }
 
-            // LA FONCTION POUR AJOUTER AU PANIER
+            // LA FONCTION POUR AJOUTER AU PANIER✅
 
             function addToCart(button) {
                 const card =button.closest(".produits-card");
@@ -474,7 +474,7 @@
 
                 // SI LE PANIER EST VIDE
 
-                if (cart.lenght === 0) {
+                if (cart.length === 0) {
                     alert("Le panier est vide ! Veuillez ajouter des produits avant de passer une commande");
                     return;
                 }
