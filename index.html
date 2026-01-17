@@ -231,6 +231,26 @@
             transform: translateY(-2px);/*Soulèvement pro*/
           }
 
+          /* BOUTON POUR L'HISTORIQUE*/
+
+          .btn-history {
+            background: none;
+            border: 1px solid #2c3e50;
+            color: #2c3e50;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            width: 100%;
+            transition: all 0.3s;
+          }
+
+          .btn-history:hover {
+            background-color: #f4f7f6;/* La couleur de fond de mon site*/
+            text-decoration: underline;
+          }
+
 
                      </style>
             <header class="header">
@@ -344,6 +364,10 @@
 
         <div class="cart-actions">
         <button onclick="clearCart()" class="btn-vider">Vider le panier🛒</button> 
+
+        <!--HISTORIQUE DE COMMANDE-->
+
+        <button onclick="Historique()" class="btn-history">HISTORIQUE DE COMMANDE</button>
 
         <!--COMMANDER LE PANIER-->
 
@@ -459,18 +483,26 @@
                     alert("Le panier est vide ! Veuillez ajouter des produits avant de passer une commande");
                     return;
                 }
-                let message = "Bonjour, je viens de votre site SHOPY et je souhaite commander les articles suivants:\n\n";
-                let total = 0;
-            
+                const orderID ="SHP-" + Math.floor(Math.random() * 100000);
+                let message = `Bonjour *,COMMANDE SHOPY ${orderID}*\n\n`;
 
                 cart.forEach(item=>{
                 message += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
-                total += item.price;
-                });
-            
+                })
+                let total = cart.reduce((sum, item) => sum + item.price, 0);
+    
+                message +=`\n*TOTAL de la commande : ${total.toLocaleString()} GNF*`;
+                message += `\n\nIDENTIFICATION COMMANDE`;
 
-                message +=`\*Total de la commande : ${total.toLocaleString()} GNF*`;
-                message += "\n\nProvenance : Site E-commerce SHOPY";
+                // Sauvegarde locale pour que le client voit son historique sur ce site
+
+                let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
+                clientHistory.push({id: orderID, details: cart, total: total, date: newDate().toLocaleString() });
+                localStorage.setItem("Historique",JSON.stringify(clientHistory));
+
+                // Envoie vers mon numéro
+
+
                 const phone ="224611476352"; // NUMERO DE TELEPHONE
                 const url =`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
                 window.open(url,"_blank");
@@ -509,6 +541,23 @@
                     updateCart();
                 };
             };
+
+            // FONCTION POUR OUVRIR L'HISTORIQUE
+
+            function ouvrirHistorique() {
+                let historique= JSON.parse(localStorage.getItem("Historique")) || [];
+                if (historique.lenght === 0) {
+                    alert("Vous n'avez pas encore passé de commande.");
+                    return;
+                }
+
+                let texte = "Dernières commandes\n\n";
+                historique.forEach((cmd, index) =>{
+                    texte += `${index + 1}. Commande${cmd.id} (${cmd.date})\n Total: ${cmd.total.toLocaleString()} GNF\n\n`;
+                });
+                alert(texte);
+            }
+            
 
         </script>
     </body>
