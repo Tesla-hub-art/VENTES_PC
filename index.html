@@ -493,25 +493,15 @@
 
                 // ON CALCULE LE TOTAL
 
-                messageFinal += `\n💰*TOTAL:${totalGlobal.toLocaleString()} GNF*`
-
-                // ON CREE UNE TRACE DE LA COMMANDE
-
-                let commande = {
-                    date: new Date().toLocaleString(),
-                    total: totalGlobal
-                };
-
-                // ON RECUPERE L'ANCIEN HISTORIQUE, ON AJOUTE LA NOUVELLE COMMANDE, ET ON ENREGISTRE
-
-                let historique = JSON.parse(localStorage.getItem("Historique")) || [];
-                historique.push(commande);
-                localStorage.setItem("Historique",JSON.stringify(historique));
-
+                const total = cart.reduce((acc, item) => acc + item.price, 0);
+                message +=`\n*TOTAL: ${total} GNF*`;
 
                 // SAUVEGARDE POUR L'HISTORIQUE
 
-                window.open(`https://wa.me/224611476352?text=${encodeURIComponent(messageFinal)}`;"_blank");
+                let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
+                clientHistory.push({date: newDate().toLocaleString(), total: totalGlobal.toLocaleString() +"GNF",id: "CMD-"+ Math.floor(Math.random*1000)});
+                localStorage.setItem("Historique",JSON.stringify(clientHistory));
+                window.open(url,"_blank");
 
                // updateCart();
             };
