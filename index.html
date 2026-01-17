@@ -496,7 +496,7 @@
                 // SAUVEGARDE POUR L'HISTORIQUE
 
                 let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
-                clientHistory.push({date: newDate().toLocaleString(), total: total  });
+                clientHistory.push({date: newDate().toLocaleString(), total: totalGlobal.toLocaleString() +"GNF",id: "CMD-"+ Math.floor(Math.random*1000)});
                 localStorage.setItem("Historique",JSON.stringify(clientHistory));
                 window.open(url,"_blank");
 
@@ -544,9 +544,12 @@
                     return;
                 }
 
-                let txt = "Dernières commandes:\n";
-                h.forEach(c => txt += `${c.date} -${c.total} GNF\n`);
-                alert(txt);
+                h.forEach((cmd, index) => {
+                     affichage += `${index + 1}.Date: ${cmd.date}\n`;
+                     affichage += `Montant: ${cmd.total}\n`;
+                     affichage += `Référence: ${cmd.id}\n\n`;
+
+                })
             }
             
 
