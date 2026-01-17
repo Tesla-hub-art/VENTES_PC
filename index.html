@@ -480,25 +480,38 @@
                 }
                 let detailProduit =""
                 const orderID ="SHP-" + Math.floor(Math.random() * 100000);
-                let message = `Bonjour *,COMMANDE SHOPY ${orderID}*\n\n`;
+                let message = "*COMMANDE SHOPY ${orderID}*\n\n";
+                let totalGlobal = 0;
+
 
                 // ON AJOUTE CHAQUE PRODUIT DU PANIER
 
                 cart.forEach(item=>{
-                message += `- ${item.name} : ${item.price} GNF\n`;
-                })
+                messageFinal += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
+                totalGlobal += item.price;
+                });
 
                 // ON CALCULE LE TOTAL
 
-                const total = cart.reduce((acc, item) => acc + item.price, 0);
-                message +=`\n*TOTAL: ${total} GNF*`;
+                messageFinal += `\n💰*TOTAL:${totalGlobal.toLocaleString()} GNF*`
+
+                // ON CREE UNE TRACE DE LA COMMANDE
+
+                let commande = {
+                    date: new Date().toLocaleString(),
+                    total: totalGlobal
+                };
+
+                // ON RECUPERE L'ANCIEN HISTORIQUE, ON AJOUTE LA NOUVELLE COMMANDE, ET ON ENREGISTRE
+
+                let historique = JSON.parse(localStorage.getItem("Historique")) || [];
+                historique.push(commande);
+                localStorage.setItem("Historique",JSON.stringify(historique));
+
 
                 // SAUVEGARDE POUR L'HISTORIQUE
 
-                let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
-                clientHistory.push({date: newDate().toLocaleString(), total: totalGlobal.toLocaleString() +"GNF",id: "CMD-"+ Math.floor(Math.random*1000)});
-                localStorage.setItem("Historique",JSON.stringify(clientHistory));
-                window.open(url,"_blank");
+                window.open(`https://wa.me/224611476352?text=${encodeURIComponent(messageFinal)}`;"_blank");
 
                // updateCart();
             };
@@ -540,7 +553,7 @@
             function ouvrirHistorique() {
                 let h = JSON.parse(localStorage.getItem("Historique")) || [];
                 if (h.lenght === 0) {
-                    alert("Vous n'avez pas encore passé de commande.");
+                    alert("Aucune commande dans l'historique");
                     return;
                 }
 
