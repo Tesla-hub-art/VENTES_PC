@@ -479,28 +479,31 @@
                     return;
                 }
                 let detailProduit =""
-                const orderID ="SHP-" + Math.floor(Math.random() * 100000);
-                let message = "*COMMANDE SHOPY ${orderID}*\n\n";
+                let message = "COMMANDE SHOPY ${orderID}\n\n";
                 let totalGlobal = 0;
 
 
                 // ON AJOUTE CHAQUE PRODUIT DU PANIER
 
-                cart.forEach(item=>{
-                messageFinal += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
+                cart.forEach(item => {
+                message += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
                 totalGlobal += item.price;
                 });
+                message += `\n*TOTAL: ${totalGlobal.toLocaleString()} GNF*`
 
-                // ON CALCULE LE TOTAL
+                // ON DEFINIT L'URL
 
-                const total = cart.reduce((acc, item) => acc + item.price, 0);
-                message +=`\n*TOTAL: ${total} GNF*`;
+                const phone = "224611476352";
+                const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
                 // SAUVEGARDE POUR L'HISTORIQUE
 
                 let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
-                clientHistory.push({date: newDate().toLocaleString(), total: totalGlobal.toLocaleString() +"GNF",id: "CMD-"+ Math.floor(Math.random*1000)});
+                clientHistory.push({date: new Date().toLocaleDateString(), total: totalGlobal.toLocaleString() +"GNF",id: "CMD-" + Math.floor(Math.random()*1000)});
                 localStorage.setItem("Historique",JSON.stringify(clientHistory));
+                
+                // OUVERTURE DE WHATSAPP
+
                 window.open(url,"_blank");
 
                // updateCart();
