@@ -19,7 +19,7 @@
             transition: 0.3s;
         }
         .produits-card button {
-            background: linear-gradient(135deg,#6e8efb,#a777e3);/* D"gradé stylé*/
+            background: linear-gradient(135deg,#6e8efb,#a777e3);/* Dégradé stylé*/
             color: white;
             border: none;
             padding: 10px 20px;
@@ -347,7 +347,7 @@
 
         <!--COMMANDER LE PANIER-->
 
-        <button onclick="sendCartToWhatsApp()">Commander le panier🛒</button> 
+        <button onclick="sendCartToWhatsApp()" class="btn-commander">Commander le panier🛒</button> 
         </div>
         </div>
     
@@ -427,7 +427,7 @@
                 updateCart();
             }
 
-            // LA FONCTION POUR ENREGISTRER LA PANIER
+            // LA FONCTION POUR ENREGISTRER LE PANIER
 
             function updateCart() {
                 const list=document.getElementById("cart-items");
