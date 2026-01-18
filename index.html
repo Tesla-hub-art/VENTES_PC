@@ -280,67 +280,8 @@
 
         <!--SCRIPT POUR AJOUTER DES PRODUITS ✅-->
 
-    <div class="container">
-
-        <!--CATEGORIE PC, PRODUIT 1-->
-
-        <div class="produits-card pc"
-        data-nom="PC HP"
-        data-prix="3500000" 
-        data-categorie="pc"
-        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/hp4.jpg">
-        <img src="Static/Images/hp4.jpg"
-        alt="PC HP">
-        <h3>HP 10ème GENERATION CORE I5</h3>
-            <P>SSD 512GB RAM 8 FREQUENCE 2.11ghz</P>
-        <div class="prix">3.500.000 GNF</div>
-        <button onclick="addToCart(this)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,je veux Commander ce PC" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-
-        <!--CATEGORIE CHAUSSURES, PRODUIT 1-->
-
-        <div class="produits-card chaussure"
-        data-nom="CHAUSSURES NIKE"
-        data-prix="450000" 
-        data-categorie="chaussure"
-        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/c2.jpg">
-        <img src="Static/Images/c2.jpg"
-        alt="CHAUSSURES NIKE">
-        <h3>CHAUSSURES NIKE </h3>
-            <P>ULTRA CONFORTABLE ET RESISTANT A L'EAU</P>
-        <div class="prix">450.000 GNF</div>
-        <button onclick="addToCart(this)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,je veux Commander cette chaussure" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
-
-        <!--CATEGORIE SUPPORT, PRODUIT 1-->
-
-        <div class="produits-card support"
-        data-nom="SUPPORT_PC"
-        data-prix="180000" 
-        data-categorie="support"
-        data-image="https://tesla-hub-art.github.io/VENTES_PC/Static/Images/s2.jpg">
-        <img src="Static/Images/s2.jpg"
-        alt="PC HP">
-        <h3>SUPPORT EN FER ULTRA RESISTANT</h3>
-            <P>POUR PERMETTRE AU PC DE SE TENIR</P>
-        <div class="prix">180.000 GNF</div>
-        <button onclick="addToCart(this)">Ajouter au panier🛒</button>
-        <a
-    href="https://wa.me/611476352?text=Bonjour,je veux Commander ce support" 
-    class="btn-whatsapp" target="_blank">
-            Commander via whatsApp
-        </a>
-        </div>
+    <div class="container" id="produis-container">
+    </div>
 
         <!--MON PANIER-->
 
@@ -427,6 +368,22 @@
                 });
             }
 
+            async function chargerCatalogue() {
+                try {
+                    const reponse = await
+                    fetch ('produits.json'); // Elle lit le fichier .json
+                    const produits = await
+                    reponse.json(); // Elle transforme le texte en liste
+                    afficherProduits(produits); // Elle envoie la liste à l'affichage
+                } catch (erreur) {
+                    console.console.error("Erreur de chargement:",erreur);
+                    
+                }
+                // ON DIT AU SITE DE LANSER LE CHARGEMENT DES QU'IL S'OUVRE
+
+                window.onload = chargerCatalogue;
+            }
+
             // LA FONCTION POUR REDIRIGER VERS LE PANIER✅
 
             function goToCart() {
@@ -501,7 +458,7 @@
                 let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
                 clientHistory.push({date: new Date().toLocaleDateString(), total: totalGlobal.toLocaleString() +"GNF",id: "CMD-" + Math.floor(Math.random()*1000)});
                 localStorage.setItem("Historique",JSON.stringify(clientHistory));
-                
+
                 // OUVERTURE DE WHATSAPP
 
                 window.open(url,"_blank");
