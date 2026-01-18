@@ -372,8 +372,7 @@
                 try {
                     const reponse = await
                     fetch ('produits.json'); // Elle lit le fichier .json
-                    const produits = await
-                    reponse.json(); // Elle transforme le texte en liste
+                    const produits = await reponse.json(); // Elle transforme le texte en liste
                     afficherProduits(produits); // Elle envoie la liste à l'affichage
                 } catch (erreur) {
                     console.error("Erreur de chargement:",erreur);
