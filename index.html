@@ -302,7 +302,9 @@
 
         <!--HISTORIQUE DE COMMANDE-->
 
-        <button onclick="ouvrirHistorique()" class="btn-history">HISTORIQUE DE COMMANDE</button>
+        <button onclick="afficherHistorique()" class="btn-history">HISTORIQUE DE COMMANDE</button>
+
+        <div id="historique-commandes"></div>
 
         <!--COMMANDER LE PANIER-->
 
@@ -414,6 +416,31 @@
                         conteneur.appendChild(carte);
                     
                     
+                });
+            }
+
+            // FONCTION POUR AFFICHER LE CONTENU DE HISTORIQUE
+
+            function afficherHistorique() {
+                const historique = JSON.parse(localStorage.getItem(historique)) || [];
+                const zone = document.getElementById("historique-commandes");
+                if (historique.length === 0) {
+                    zone.innerText = "<p>Aucune commande enrégistrée</p>";
+                    return;
+                }
+
+                zonr.innerHTML = "<h3>Historique des commandes</h3>";
+
+                historique.forEach((cmd, index) =>{
+                    zone.innerHTML +=`
+                        <div class="commande">
+                            <strong>${index + 1}.</strong><br>
+                            Date : ${cmd.date}</br>
+                            Montant : ${cmd.montant} GNF</br>
+                            Référence : ${cmd.reference}
+                            <hr>
+                        </div>
+                    `;
                 });
             }
 
