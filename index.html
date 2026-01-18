@@ -51,7 +51,7 @@
         .header {
             text-align: center;
             padding: 60px 20px;
-            background: linear-gradient(rgba(44, 62, 80, 0.8),rgba(44, 62, 80, 0.8)), url('hp17.jpg');
+            background: linear-gradient(rgba(44, 62, 80, 0.8),rgba(44, 62, 80, 0.8)), url('hp7.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -401,7 +401,7 @@
                     carte.setAttribute('data-prix', p.prix);
 
                     carte.innerHTML = `
-                        <img src ="${p.image}" alt="${p.nom}">
+                        <img src="${p.image}" alt="${p.nom}">
                         <h3>${p.nom}</h3>
                         <p>${p.specs}</p>
                         <div class="prix">${Number(p.prix).toLocaleString()} GNF</div>
