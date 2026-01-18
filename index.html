@@ -304,8 +304,6 @@
 
         <button onclick="ouvrirHistorique()" class="btn-history">HISTORIQUE DE COMMANDE</button>
 
-        <div id="historique-commandes"></div>
-
         <!--COMMANDER LE PANIER-->
 
         <button  class="btn-commander" onclick="sendCartToWhatsApp()">Commander le panier🛒</button> 
@@ -418,6 +416,8 @@
                     
                 });
             }
+
+            window.onload=chargerCatalogue;
 
             // LA FONCTION POUR REDIRIGER VERS LE PANIER✅
 
@@ -537,37 +537,21 @@
             // FONCTION POUR OUVRIR L'HISTORIQUE
 
             function ouvrirHistorique() {
-                const historique = JSON.parse(localStorage.getItem("historiqueCommandes")) || [];
-                const bloc = document.getElementById("historique");
-                const liste =document.getElementById("listeHistorique");
-
-                // AFFICHER LE BLOC
-                bloc.style.display="block";
-
-                //NETTOYER L'ANCIEN AFFICHAGE
-                liste.innerHTML="";
-    
-                if (historique.length === 0) {
-                    liste.innerHTML="<p>Aucune commande enregistrée.</p>";
+                let h = JSON.parse(localStorage.getItem("Historique")) || [];
+                if (h.length === 0) {
+                    alert("Aucune commande dans l'historique");
                     return;
                 }
+                let affichage="";
 
-                historique.forEach((cmd, index) => {
-                    const div =document.createElement("div");
-                    div.style.border = "1px solid #ccc";
-                    div.style.margin = "10px 0";
-                    div.style.padding = "10px";
+                h.forEach((cmd, index) => {
+                     affichage += `${index + 1}.Date: ${cmd.date}\n`;
+                     affichage += `Montant: ${cmd.total}\n`;
+                     affichage += `Référence: ${cmd.id}\n\n`;
 
-                    div.innerHTML = `
-                        <strong>Commande #${index + 1}</strong><br>
-                            Date : ${cmd.date}<br>
-                            Référence : ${cmd.reference} <br>
-                            Montant : ${cmd.montant} GNF<br>
-                            Fournisseur : ${cmd.fournisseur || "Non défini"}`;
+                     alert(affichage)
 
-                            liste.appendChild(div)
-
-                });
+                })
             }
             
 
