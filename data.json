@@ -4,7 +4,7 @@
         "nom":"HP 15ème Génération",
         "prix":3500000,
         "specs":"Core i5,SSD 512GB,RAM 8GB",
-        "image":"./Static/Images/hp4.jpg",
+        "image":"Static/Images/hp4.jpg",
         "catégorie":"pc"
     },
     {
@@ -12,7 +12,7 @@
         "nom":"Ordinateur Portable Dell",
         "prix":4200000,
         "specs":"Core i7,SSD 512GB,RAM 16GB",
-        "image":"./Static/Images/dell.3.jpg",
+        "image":"Static/Images/dell.3.jpg",
         "catégorie":"pc"
     },
     {
@@ -20,7 +20,7 @@
         "nom":"chaussures nike",
         "prix":200000,
         "specs":"haute qualité",
-        "image":"./Static/Images/c1.jpg",
+        "image":"Static/Images/c1.jpg",
         "catégorie":"support"
     }
 ]
