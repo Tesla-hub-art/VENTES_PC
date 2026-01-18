@@ -280,7 +280,7 @@
 
         <!--SCRIPT POUR AJOUTER DES PRODUITS ✅-->
 
-    <div class="container" id="produis-container">
+    <div class="container">
     </div>
 
         <!--MON PANIER-->
@@ -370,7 +370,7 @@
 
             async function chargerCatalogue() {
                 try {
-                    const reponse = await fetch ('produits.json'); // Elle lit le fichier .json
+                    const reponse = await fetch ('data.json'); // Elle lit le fichier .json
                     const produits = await reponse.json(); // Elle transforme le texte en liste
                     afficherProduits(produits); // Elle envoie la liste à l'affichage
                 } catch (erreur) {
@@ -407,8 +407,9 @@
                         <div class="prix">${Number(p.prix).toLocaleString()} GNF</div>
 
                         <button onclick="addToCart(this)">Ajouter au panier🛒</button>
-                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("Bonjour SHOPY, je veux commander: " + p.nom)}" class="btn-whatsapp"
-                        target="_blank" style="display:block"; background:#25D366; color:white; padding:10px; border-radius: 8px; text-decoration:none; margin-top:10px
+                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("Bonjour SHOPY, je veux commander: " + p.nom)}" 
+                        class="btn-whatsapp" target="_blank" style="display:block"; background:#25D366; color:white; padding:10px;
+                        border-radius: 8px; text-decoration:none; margin-top:10px
                         text-align:center;">Commander via WhatsApp</a>`;
 
                         conteneur.appendChild(carte);
@@ -489,7 +490,8 @@
                 // SAUVEGARDE POUR L'HISTORIQUE
 
                 let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
-                clientHistory.push({date: new Date().toLocaleDateString(), total: totalGlobal.toLocaleString() +"GNF",id: "CMD-" + Math.floor(Math.random()*1000)});
+                clientHistory.push({date: new Date().toLocaleDateString(), total: totalGlobal.toLocaleString() +"GNF",
+                id: "CMD-" + Math.floor(Math.random()*1000)});
                 localStorage.setItem("Historique",JSON.stringify(clientHistory));
 
                 // OUVERTURE DE WHATSAPP
