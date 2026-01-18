@@ -370,8 +370,7 @@
 
             async function chargerCatalogue() {
                 try {
-                    const reponse = await
-                    fetch ('produits.json'); // Elle lit le fichier .json
+                    const reponse = await fetch ('produits.json'); // Elle lit le fichier .json
                     const produits = await reponse.json(); // Elle transforme le texte en liste
                     afficherProduits(produits); // Elle envoie la liste à l'affichage
                 } catch (erreur) {
@@ -394,7 +393,7 @@
                     // on crée la carte html
 
                     const carte = document.createElement("div");
-                    carte.className = `produits-card ${p.catégorie}`;
+                    carte.className = `produits-card ${p.catgorie}`;
 
                     // on ajoute les dataset pour que le bouton ajouter au panier fonctionne
 
