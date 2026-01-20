@@ -525,6 +525,21 @@
                 id: "CMD-" + Math.floor(Math.random()*1000)});
                 localStorage.setItem("Historique",JSON.stringify(clientHistory));
 
+                // RECUPERER L'HISTORIQUE EXISTANT
+
+                let historique = JSON.parse(localStorage.getItem("historiqueCommandes")) || [];
+
+                // CREEER LA COMMANDE
+
+                let nouvelleCommande = {
+                    date:new Date().toLocaleString(),
+                    montant:totalGlobal,
+                    reference:reference
+
+                };
+
+                historique.push("historiqueCommandes", JSON.stringify(historique));
+
                 // OUVERTURE DE WHATSAPP
 
                 window.open(url,"_blank");
