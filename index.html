@@ -275,6 +275,26 @@
             font-size: 28px;
             cursor: pointer;
         }
+        .search-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 15px 0 25px 0;
+        }
+        .search-box input {
+            width: 90%;
+            max-width: 400px;
+            padding: 12ps 15px;
+            font-size: 15px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: 0.3s;
+        }
+        .search-box input:focus {
+            border-color: #25D366;
+            box-shadow: 0 0 5px rgba(37, 211, 102, 0.5)
+        }
 
 
                      </style>
@@ -286,6 +306,17 @@
          <h1>SHOPY</h1>
          <p>EQUIPEMENTS INFORMATIQUES A VOTRE DISPOSITION 24H/24</p>
          </div>
+          <!--classe du boutton pour la recherche--> 
+
+       <input
+       type="text"
+       id="searchInput"
+       placeholder="Rechercher un produit (ex: HP,Core i5,SSD)"
+       oninput="rechercherProduits()"
+       class="search-bar"
+        />
+
+
 
          <!--CLASSEMENT DES PRODUITS PAR CATEGORIE ✅-->
 
@@ -307,16 +338,6 @@
 
      </header>
         </head>
-
-       <!--classe du boutton pour la recherche--> 
-
-       <input
-       type="text"
-       id="searchInput"
-       placeholder="Rechercher un produit (ex: HP,Core i5,SSD)"
-       oninput="rechercherProduits()"
-       class="search-bar"
-        />
 
         <!--SCRIPT POUR AJOUTER DES PRODUITS ✅-->
 
