@@ -308,6 +308,16 @@
      </header>
         </head>
 
+       <!--classe du boutton pour la recherche--> 
+
+       <input
+       type="text"
+       id="searchInput"
+       placeholder="Rechercher un produit (ex: HP,Core i5,SSD)"
+       oninput="rechercherProduits()"
+       class="search-bar"
+        />
+
         <!--SCRIPT POUR AJOUTER DES PRODUITS ✅-->
 
     <div class="container"></div>
@@ -606,6 +616,29 @@
 
             function fermerHistorique() {
                 document.getElementById("historiqueModal").style.display= "none";
+            }
+
+            // FONCTION POUR RECHERCHER UN PRODUIT
+
+            function rechercherProduits() {
+                const texte = document.getElementById("searchInput").value.toLowerCase();
+                const cartes = document.querySelectorAll(".produits-card");
+
+                cartes.forEach(carte => {
+                    const nom = carte.querySelector(".nom").textContent.toLowerCase();
+                    const specs = carte.querySelector(".specs").textContent.toLowerCase();
+                    const categories = carte.dataset.categories.toLowerCase();
+
+                    if (
+                        nom.includes(texte) ||
+                        specs.includes(texte) ||
+                        catégories.includes(texte) 
+                    ){
+                        carte.style.display = "block";
+                    }else{
+                        carte.style.display = "none";
+                    }
+                });
             }
             
 
