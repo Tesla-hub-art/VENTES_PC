@@ -306,18 +306,7 @@
          <h1>SHOPY</h1>
          <p>EQUIPEMENTS INFORMATIQUES A VOTRE DISPOSITION 24H/24</p>
          </div>
-          <!--classe du boutton pour la recherche--> 
-
-       <input
-       type="text"
-       id="searchInput"
-       placeholder="Rechercher un produit (ex: HP,Core i5,SSD)"
-       oninput="rechercherProduits()"
-       class="search-bar"
-        />
-
-
-
+        
          <!--CLASSEMENT DES PRODUITS PAR CATEGORIE ✅-->
 
         <div class="categories" style="text-align: center; margin-bottom: 20px;">
@@ -360,10 +349,6 @@
 
         <div class="cart-actions">
         <button onclick="ouvrirModalVider()" class="btn-vider">Vider le panier🛒</button> 
-
-        <!--HISTORIQUE DE COMMANDE-->
-
-        <button onclick="ouvrirHistorique()" class="btn-history">HISTORIQUE DE COMMANDE</button>
 
         <!--COMMANDER LE PANIER-->
 
@@ -549,28 +534,6 @@
                 const phone = "224611476352";
                 const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-                // SAUVEGARDE POUR L'HISTORIQUE
-
-                let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
-                clientHistory.push({date: new Date().toLocaleDateString(), total: totalGlobal.toLocaleString() +"GNF",
-                id: "CMD-" + Math.floor(Math.random()*1000)});
-                localStorage.setItem("Historique",JSON.stringify(clientHistory));
-
-                // RECUPERER L'HISTORIQUE EXISTANT
-
-                let historique = JSON.parse(localStorage.getItem("historiqueCommandes")) || [];
-
-                // CREEER LA COMMANDE
-
-                let nouvelleCommande = {
-                    date:new Date().toLocaleString(),
-                    montant:totalGlobal,
-                    reference:reference
-
-                };
-
-                historique.push("historiqueCommandes", JSON.stringify(historique));
-
                 // OUVERTURE DE WHATSAPP
 
                 window.open(url,"_blank");
@@ -644,64 +607,10 @@
                     modal.style.display = "none";
                 }
             }
-
-
-            // FONCTION POUR OUVRIR L'HISTORIQUE
-
-            function ouvrirHistorique() {
-                const historique = JSON.parse(localStorage.getItem("historiqueCommandes")) || [];
-                const contenu = document.getElementById("contenuHistorique");
-                if (historique.length === 0) {
-                    contenu.innerHTML ="<p> Aucune commande enregistrée.</p>";
-                }else {
-                    contenu.innerHTML = historique.map((cmd, index) => `
-                        <div style="border-bottom:1px solid #ddd;padding:10px 0;">
-                            <strong>${index + 1}. Date :</strong> ${cmd.date}<br>
-                            <strong>Montant:</strong> ${cmd.montant} GNF<br>
-                            <strong>Référence:</strong> ${cmd.reference}<br>
-                        </div>
-
-                    `).join("");
-                }
-                let affichage="";
-
-                document.getElementById("historiqueModal").style.display= "block";
-
-            }
-
-            // FONCTION POUR FERMER L'HISTORIQUE
-
-            function fermerHistorique() {
-                document.getElementById("historiqueModal").style.display= "none";
-            }
-
-            // FONCTION POUR RECHERCHER UN PRODUIT
-
-            function rechercherProduits() {
-                const texte = document.getElementById("searchInput").value.toLowerCase();
-                const cartes = document.querySelectorAll(".produits-card");
-
-                cartes.forEach(carte => {
-                    const nom = carte.querySelector(".nom").textContent.toLowerCase();
-                    const specs = carte.querySelector(".specs").textContent.toLowerCase();
-                    const categories = carte.dataset.categories.toLowerCase();
-
-                    if (
-                        nom.includes(texte) ||
-                        specs.includes(texte) ||
-                        catégories.includes(texte) 
-                    ){
-                        carte.style.display = "block";
-                    }else{
-                        carte.style.display = "none";
-                    }
-                });
-            }
             
 
         </script>
         <script src="script.js"></script>
-        <div id="historiqueModal" class="modal">
            <div id="modalViderPanier" class="modal">
             <div class="modal-content" style="text-align: center;">
                 <span class="close" onclick="fermerModalVider()">&times;</span>
@@ -712,10 +621,6 @@
                 <div style="margin-top: 30px;display: flex;justify-content: center; gap: 20px;"> </button>
                     <button onclick="fermerModalVider()" style="padding: 10px 20px;border: 1px solid #ccc;background: #ff4d4d;
                 color: white;border: none;border-radius: 5px;cursor: pointer;font-weight: bold;">Oui, vider le panier</button>
-            <div class="modal-content">
-                <span class="close" onclick="fermerHistorique()">&times;</span>
-                <h2>Historique des commandes</h2>
-                <div id="contenuHistorique"></div>
             </div>
         </div>
     </body>
