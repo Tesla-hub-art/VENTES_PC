@@ -359,7 +359,7 @@
         <!--SUPPRIMER  LE PANIER-->
 
         <div class="cart-actions">
-        <button onclick="clearCart()" class="btn-vider">Vider le panier🛒</button> 
+        <button onclick="ouvrirModalVider()" class="btn-vider">Vider le panier🛒</button> 
 
         <!--HISTORIQUE DE COMMANDE-->
 
@@ -602,13 +602,42 @@
 
             // FONCTION POUR SUPPRIMER TOUT LE PANIER
 
-            function clearCart() {
-                if(confirm("Voulez-vous vraiment vider tout le panier ?")) {
-                    cart = [];
-                    localStorage.removeItem("cart");
-                    updateCart();
-                };
-            };
+            //1. fonction qui ouvre juste les fenêtres
+
+            function ouvrirModalVider() {
+                const modal =document.getElementById("modalViderPanier");
+                modal.style.display="block";
+            }
+
+            //2. fonction qui ferme la fenêtre
+
+            function fermerModalVider() {
+                const modal = document.getElementById("modalViderPanier");
+                modal.style.display = "none";
+            }
+
+            //3. fonction qui vide vraiment le panier
+
+            function confirmerVider() {
+                // on vide la liste
+                cart =[];
+                // on sauvegarde le vide
+                localStorage.removeItem('cart');
+                // on met à jour l'affichage
+                updateCart();
+                // on ferme la fenêtre
+                fermerModalVider();
+            }
+
+            // fermer si on clique sur le fond gris en dehors de la boîte
+
+            window.onclick = function(event) {
+                const modal = document.getElementByIdm("modalViderPanier");
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
 
             // FONCTION POUR OUVRIR L'HISTORIQUE
 
@@ -666,6 +695,16 @@
         </script>
         <script src="script.js"></script>
         <div id="historiqueModal" class="modal">
+           <div id="modalViderPanier" class="modal">
+            <div class="modal-content" style="text-align: center;">
+                <span class="close" onclick="fermerModalVider()">&times;</span>
+                
+                <h2 style="margin-top: 0;">⚠️Attention</h2>
+                <p style="font-size: 18px;margin: 20px 0;">Voulez-vous vraiment supprimer tous les produits du panier ?</p>
+
+                <div style="margin-top: 30px;display: flex;justify-content: center; gap: 20px;"> </button>
+                    <button onclick="fermerModalVider()" style="padding: 10px 20px;border: 1px solid #ccc;background: #ff4d4d;
+                color: white;border: none;border-radius: 5px;cursor: pointer;font-weight: bold;">Oui, vider le panier</button>
             <div class="modal-content">
                 <span class="close" onclick="fermerHistorique()">&times;</span>
                 <h2>Historique des commandes</h2>
