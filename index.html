@@ -623,8 +623,15 @@
                 cart =[];
                 // on sauvegarde le vide
                 localStorage.removeItem('cart');
+                console.log("Localstorage vidé");
                 // on met à jour l'affichage
-                updateCart();
+                if (typeof updateCart === "function") {
+                    updateCart();
+                    console.log("Affichage mis à jour");
+                }else{
+                    console.error("La fonction updatecart est introuvable !");
+                }
+                
                 // on ferme la fenêtre
                 fermerModalVider();
             }
