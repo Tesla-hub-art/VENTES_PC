@@ -348,7 +348,7 @@
         <!--SUPPRIMER  LE PANIER-->
 
         <div class="cart-actions">
-        <button onclick="confirmerVider()" class="btn-vider">Vider le panier🛒</button> 
+        <button onclick="ouvrirModalVider()" class="btn-vider">Vider le panier🛒</button> 
 
         <!--COMMANDER LE PANIER-->
 
@@ -569,14 +569,14 @@
 
             function ouvrirModalVider() {
                 const modal =document.getElementById("modalViderPanier");
-                modal.style.display="block";
+                if (modal) modal.style.display="block";
             }
 
             //2. fonction qui ferme la fenêtre
 
             function fermerModalVider() {
                 const modal = document.getElementById("modalViderPanier");
-                modal.style.display = "none";
+                if (modal) modal.style.display = "none";
             }
 
             //3. fonction qui vide vraiment le panier
@@ -585,7 +585,7 @@
                 // on vide la liste
                 cart = [];
                 // on sauvegarde le vide
-                localStorage.removeItem('cart');
+                localStorage.removeItem("cart");
                 console.log("Action: vidage du panier");
                 // on met à jour l'affichage
                 
@@ -593,6 +593,7 @@
                 
                 // on ferme la fenêtre
                 fermerModalVider();
+                console.log("Le panier a été vidé avec succès.");
             }
 
             // fermer si on clique sur le fond gris en dehors de la boîte
