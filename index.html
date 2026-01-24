@@ -583,17 +583,13 @@
 
             function confirmerVider() {
                 // on vide la liste
-                cart =[];
+                cart = [];
                 // on sauvegarde le vide
                 localStorage.removeItem('cart');
-                console.log("Localstorage vidé");
+                console.log("Action: vidage du panier");
                 // on met à jour l'affichage
-                if (typeof updateCart === "function") {
-                    updateCart();
-                    console.log("Affichage mis à jour");
-                }else{
-                    console.error("La fonction updatecart est introuvable !");
-                }
+                
+                    updateCart(); 
                 
                 // on ferme la fenêtre
                 fermerModalVider();
