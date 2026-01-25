@@ -437,36 +437,30 @@
                 produits.forEach(p => {
                     // on crée la carte html
 
-                    const messageWhatsApp = encodeURIComponent('Bonjour SHOPY, je veux commander:\n\n' +
-                        '*Produit: *${produit.nom}\n' +
-                        '*Prix: *${produit.prix.toLocaleString()} GNF\n' +
-                        '*Caractéristiques: *${produit.specs}\n\n' +
-                        'Est-il disponible ?'
+                    const carte = document.createElement("div");
+                    carte.className =`produits-card ${p.catégorie}`;
 
-                    );
-                    '<a href="${lienWhatsApp}" target="_blank" class="btn-whatsapp">Commander via WhatsApp</a>'
+                    // on ajoute les dataset pour que le bouton ajouter au panier fonctionne
 
-                    const lienWhatsApp = 'https://wa.me/224611476352?text=${encodeURIComponent(messageWhatsApp)}';
+                    carte.setAttribute('data-nom', p.nom);
+                    carte.setAttribute('data-prix', p.prix);
 
-                    // on genère la carte du produit avec le bon lien
+                    carte.innerHTML = `
+                        <img src="${p.image}" alt="${p.nom}">
+                        <h3>${p.nom}</h3>
+                        <p>${p.specs}</p>
+                        <div class="prix">${Number(p.prix).toLocaleString()} GNF</div>
 
-                    productGrid.innerHTML += 
-                `<div class="product-card"> <img src ="${produit.image}" alt="${produit.nom}"> 
-                    <h3>${produit.nom}</h3> <p class ="price">${produit.prix.toLocaleString()} GNF</p> 
-                    <p class ="specs" style="font-size:0.85rem; color:#666; margin-bottom:10px;"> ${produit.specs} </p> 
-                    <div class="product-buttons">
-                    <button onclick ="addToCart({produit.id})" class="btn-cart">
-                        🛒Panier
-                    </button>
+                        <button onclick="addToCart(this)">Ajouter au panier🛒</button>
+                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("Bonjour SHOPY, je veux commander: " + p.nom)}" 
+                        class="btn-whatsapp" target="_blank" style="display:block"; background:#25D366; color:white; padding:10px;
+                        border-radius: 8px; text-decoration:none; margin-top:10px
+                        text-align:center;">Commander via WhatsApp</a>`;
 
-                    <a href="${lienWhatsApp}" target="_blank" class ="btn-whatsapp" style="background-color:#25D366"; color: white; text-decoration: none; padding: 10px; border-radius: 5px; display: inline-block;">
-                        commander via WhatSapp
-                        </a>
-                        </div>
-                        </div>
-                        `;
-                    });                 
-                
+                        conteneur.appendChild(carte);
+                    
+                    
+                });
             }
 
             window.onload=chargerCatalogue;
@@ -575,14 +569,14 @@
 
             function ouvrirModalVider() {
                 const modal =document.getElementById("modalViderPanier");
-                if (modal) modal.style.display="block";
+                modal.style.display="block";
             }
 
             //2. fonction qui ferme la fenêtre
 
             function fermerModalVider() {
                 const modal = document.getElementById("modalViderPanier");
-                if (modal) modal.style.display = "none";
+                modal.style.display = "none";
             }
 
             //3. fonction qui vide vraiment le panier
@@ -591,15 +585,16 @@
                 // on vide la liste
                 cart = [];
                 // on sauvegarde le vide
-                localStorage.removeItem("cart");
+                localStorage.removeItem('cart');
                 console.log("Action: vidage du panier");
                 // on met à jour l'affichage
                 
                     updateCart(); 
                 
+
+                
                 // on ferme la fenêtre
                 fermerModalVider();
-                console.log("Le panier a été vidé avec succès.");
             }
 
             // fermer si on clique sur le fond gris en dehors de la boîte
@@ -622,7 +617,7 @@
                 <p style="font-size: 18px;margin: 20px 0;">Voulez-vous vraiment supprimer tous les produits du panier ?</p>
 
                 <div style="margin-top: 30px;display: flex;justify-content: center; gap: 20px;"> </button>
-                    <button onclick="confirmerVider()" style="padding: 10px 20px;border: 1px solid #ccc;background: #ff4d4d;
+                    <button onclick="fermerModalVider()" style="padding: 10px 20px;border: 1px solid #ccc;background: #ff4d4d;
                 color: white;border: none;border-radius: 5px;cursor: pointer;font-weight: bold;">Oui, vider le panier</button>
             </div>
         </div>
