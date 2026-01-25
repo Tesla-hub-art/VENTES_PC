@@ -534,6 +534,28 @@
                 const phone = "224611476352";
                 const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
+                // SAUVEGARDE POUR L'HISTORIQUE
+
+                let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
+                clientHistory.push({date: new Date().toLocaleDateString(), total: totalGlobal.toLocaleString() +"GNF",
+                id: "CMD-" + Math.floor(Math.random()*1000)});
+                localStorage.setItem("Historique",JSON.stringify(clientHistory));
+
+                // RECUPERER L'HISTORIQUE EXISTANT
+
+                let historique = JSON.parse(localStorage.getItem("historiqueCommandes")) || [];
+
+                // CREEER LA COMMANDE
+
+                let nouvelleCommande = {
+                    date:new Date().toLocaleString(),
+                    montant:totalGlobal,
+                    reference:reference
+
+                };
+
+                historique.push("historiqueCommandes", JSON.stringify(historique));
+
                 // OUVERTURE DE WHATSAPP
 
                 window.open(url,"_blank");
@@ -583,15 +605,17 @@
 
             function confirmerVider() {
                 // on vide la liste
-                cart = [];
+                cart =[];
                 // on sauvegarde le vide
                 localStorage.removeItem('cart');
-                console.log("Action: vidage du panier");
+                console.log("Localstorage vidé");
                 // on met à jour l'affichage
-                
-                    updateCart(); 
-                
-
+                if (typeof updateCart === "function") {
+                    updateCart();
+                    console.log("Affichage mis à jour");
+                }else{
+                    console.error("La fonction updatecart est introuvable !");
+                }
                 
                 // on ferme la fenêtre
                 fermerModalVider();
@@ -600,18 +624,20 @@
             // fermer si on clique sur le fond gris en dehors de la boîte
 
             window.onclick = function(event) {
-                const modal = document.getElementById("modalViderPanier");
+                const modal = document.getElementByIdm("modalViderPanier");
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
             }
+
+
             
 
         </script>
         <script src="script.js"></script>
            <div id="modalViderPanier" class="modal">
             <div class="modal-content" style="text-align: center;">
-                <span class="close" onclick="fermerModalVider()">&times;</span>
+                <span class="close" onclick="ouvrirModalVider()">&times;</span>
                 
                 <h2 style="margin-top: 0;">⚠️Attention</h2>
                 <p style="font-size: 18px;margin: 20px 0;">Voulez-vous vraiment supprimer tous les produits du panier ?</p>
