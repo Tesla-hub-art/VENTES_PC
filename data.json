@@ -1,5 +1,9 @@
 [
+    
     {
+        "LES ORDINATEURS":"LA LISTE DES ORDINATEURS",
+
+
         "id":"PC000",
         "nom":"HP 15ème Génération",
         "prix":3500000,
@@ -8,6 +12,9 @@
         "catégorie":"pc"
     },
     {
+         "LES CHARGEURS":"LA LISTE DES CHARGEURS",
+
+
         "id":"PC002",
         "nom":"Ordinateur Portable Dell",
         "prix":4200000,
@@ -16,11 +23,17 @@
         "catégorie":"pc"
     },
     {
+         "LES SUPPORTS":"LA LISTE DES SUPPORTS DE PC",
+
+
         "id":"ACC001",
         "nom":"chaussures nike",
         "prix":200000,
         "specs":"haute qualité",
         "image":"Static/Images/c1.jpg",
         "catégorie":"support"
+    },
+    {
+         "LES TELEPHONES":"LA LISTE DES TELEPHONES"
     }
 ]
