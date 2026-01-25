@@ -98,6 +98,14 @@
         "catégorie":"support"
     },
     {
-         "LES TELEPHONES":"LA LISTE DES TELEPHONES"
+         "LES TELEPHONES":"LA LISTE DES TELEPHONES",
+
+        "id":"PC005",
+        "nom":"HP interime",
+        "prix":2600000,
+        "specs":"Core i5,SSD 256GB,RAM 8GB",
+        "image":"Static/Images/hp2.jpg",
+        "catégorie":"pc"
     }
+    
 ]
