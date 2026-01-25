@@ -5,12 +5,76 @@
 
 
         "id":"PC000",
-        "nom":"HP 15ème Génération",
-        "prix":3500000,
+        "nom":"DELL LATITUDE",
+        "prix":2800000,
+        "specs":"Core i5,SSD 256GB,RAM 8GB",
+        "image":"Static/Images/dell1.jpg",
+        "catégorie":"pc"
+    },
+    {
+
+        "id":"PC001",
+        "nom":"VICTUS",
+        "prix":9800000,
+        "specs":"Core i5,SSD 512GB,RAM 16GB",
+        "image":"Static/Images/victus.jpg",
+        "catégorie":"pc"
+    },
+    {
+
+        "id":"PC003",
+        "nom":"LENOVO",
+        "prix":2900000,
+        "specs":"Core i5,SSD 256GB,RAM 8GB",
+        "image":"Static/Images/lenovo1.jpg",
+        "catégorie":"pc"
+    },
+    {
+
+        "id":"PC004",
+        "nom":"HP",
+        "prix":2900000,
+        "specs":"Core i5,SSD 256GB,RAM 8GB",
+        "image":"Static/Images/hp1.jpg",
+        "catégorie":"pc"
+    },
+    {
+
+        "id":"PC005",
+        "nom":"HP",
+        "prix":2600000,
+        "specs":"Core i5,SSD 256GB,RAM 8GB",
+        "image":"Static/Images/hp2.jpg",
+        "catégorie":"pc"
+    },
+    {
+
+        "id":"PC006",
+        "nom":"HP elitbook",
+        "prix":2900000,
+        "specs":"Core i5,SSD 256GB,RAM 8GB",
+        "image":"Static/Images/hp3.jpg",
+        "catégorie":"pc"
+    },
+    {
+
+        "id":"PC006",
+        "nom":"LENOVO",
+        "prix":3000000,
         "specs":"Core i5,SSD 512GB,RAM 8GB",
+        "image":"Static/Images/lenovo2.jpg",
+        "catégorie":"pc"
+    },
+    {
+
+        "id":"PC007",
+        "nom":"HP Zbook",
+        "prix":2600000,
+        "specs":"Core i7,SSD 512GB,RAM 16GB",
         "image":"Static/Images/hp4.jpg",
         "catégorie":"pc"
     },
+    
     {
          "LES CHARGEURS":"LA LISTE DES CHARGEURS",
 
@@ -27,11 +91,11 @@
 
 
         "id":"ACC001",
-        "nom":"chaussures nike",
-        "prix":200000,
+        "nom":"SUPPORT DE PC",
+        "prix":140000,
         "specs":"haute qualité",
-        "image":"Static/Images/c1.jpg",
-        "catégorie":"chargeur"
+        "image":"Static/Images/s2.jpg",
+        "catégorie":"support"
     },
     {
          "LES TELEPHONES":"LA LISTE DES TELEPHONES"
