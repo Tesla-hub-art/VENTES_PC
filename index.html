@@ -534,28 +534,6 @@
                 const phone = "224611476352";
                 const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-                // SAUVEGARDE POUR L'HISTORIQUE
-
-                let clientHistory = JSON.parse(localStorage.getItem("Historique")) || [];
-                clientHistory.push({date: new Date().toLocaleDateString(), total: totalGlobal.toLocaleString() +"GNF",
-                id: "CMD-" + Math.floor(Math.random()*1000)});
-                localStorage.setItem("Historique",JSON.stringify(clientHistory));
-
-                // RECUPERER L'HISTORIQUE EXISTANT
-
-                let historique = JSON.parse(localStorage.getItem("historiqueCommandes")) || [];
-
-                // CREEER LA COMMANDE
-
-                let nouvelleCommande = {
-                    date:new Date().toLocaleString(),
-                    montant:totalGlobal,
-                    reference:reference
-
-                };
-
-                historique.push("historiqueCommandes", JSON.stringify(historique));
-
                 // OUVERTURE DE WHATSAPP
 
                 window.open(url,"_blank");
