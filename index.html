@@ -275,30 +275,47 @@
             font-size: 28px;
             cursor: pointer;
         }
-        .search-box {
-            width: 100%;
+        .search-container {
+            position: relative;
+            max-width: 600px;
             display: flex;
-            justify-content: center;
-            margin: 15px 0 25px 0;
+            align-items: center;
+            margin: 30px auto;
         }
-        .search-box input {
-            width: 90%;
+        #searchInput {
+            width: 100%;
             max-width: 400px;
-            padding: 12ps 15px;
-            font-size: 15px;
-            border-radius: 25px;
-            border: 1px solid #ccc;
+            padding: 15ps 20px 15px 50px;
+            font-size: 16px;
+            border-radius: 50px;
+            border: 2px solid #ddd;
             outline: none;
-            transition: 0.3s;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        .search-box input:focus {
-            border-color: #25D366;
-            box-shadow: 0 0 5px rgba(37, 211, 102, 0.5)
+        .searchInput:focus {
+            border-color: #28a745;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+        }
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            color: #888;
+            font-size: 18px;
         }
 
 
                      </style>
             <header class="header">
+
+        <!--LA BARRE DE RECHERCHES-->
+
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="Rechercher un produit (ex:HP,i5,16GB,Dell...)">
+        </div>
+        <div id="no results" style="display: none;text-align: center; color: red; margin-top: 20px;">
+            Aucun produit ne correspond à votre recherche.</div>
 
         <!--ENTETE ET NOM DU MARCHE EN LIGNE ✅-->
             
@@ -322,8 +339,8 @@
        <!--LE MENU DE NAVIGATION-->
 
          <nav class="nav">
-            <a href="#produits">Produits</a>
-            <a href="#contact">Contact</a>
+            <a href="224611476352">Plus d'informations</a>
+            <a href="224611476352">Contact</a>
             <a href="https://wa.me/611476352" target="_blank">WhatsApp</a>
         </nav>
 
