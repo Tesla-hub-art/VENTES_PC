@@ -418,6 +418,17 @@
                 cart = [];
             }
 
+            //1. Variable globale pour garder les produits en mémoire
+            
+            let mesProduitsGlobal = [];
+            fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                mesProduitsGlobal = data;
+            } ) 
+
+            o
+
             // LA FONCTION POUR FILTRER PAR CATEGORIE✅
 
             function filterCategory(category) {
