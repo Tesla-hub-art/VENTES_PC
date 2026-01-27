@@ -80,11 +80,27 @@
 
 
         "id":"PC002",
-        "nom":"Ordinateur Portable Dell",
-        "prix":4200000,
+        "nom":"chargeurs d'ordinateurs",
+        "prix":150000,
         "specs":"Core i7,SSD 512GB,RAM 16GB",
-        "image":"Static/Images/dell.3.jpg",
-        "catégorie":"telephone"
+        "image":"Static/Images/Chargeurs/c1.jpg",
+        "catégorie":"chargeur"
+    },
+    {
+        "id":"PC002",
+        "nom":"chargeurs d'ordinateurs",
+        "prix":150000,
+        "specs":"Core i7,SSD 512GB,RAM 16GB",
+        "image":"Static/Images/Chargeurs/c2.jpg",
+        "catégorie":"chargeur"
+    },
+    {
+        "id":"PC002",
+        "nom":"chargeurs d'ordinateurs",
+        "prix":150000,
+        "specs":"Core i7,SSD 512GB,RAM 16GB",
+        "image":"Static/Images/Chargeurs/c4.jpg",
+        "catégorie":"chargeur"
     },
     {
          "LES SUPPORTS":"LA LISTE DES SUPPORTS DE PC",
@@ -101,11 +117,11 @@
          "LES TELEPHONES":"LA LISTE DES TELEPHONES",
 
         "id":"PC005",
-        "nom":"HP interime",
-        "prix":2600000,
-        "specs":"Core i5,SSD 256GB,RAM 8GB",
-        "image":"Static/Images/hp2.jpg",
-        "catégorie":"pc"
+        "nom":"Telephone samsung",
+        "prix":1500000,
+        "specs":"Samsung A17, 128GB",
+        "image":"Static/Images/Telephones/t5.jpg",
+        "catégorie":"telephone"
     }
     
 ]

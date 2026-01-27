@@ -332,6 +332,7 @@
         <button onclick="filterCategory('support')">SUPPORTS</button>
         <button onclick="filterCategory('chargeur')">CHARGEURS</button>
         <button onclick="filterCategory('telephone')">TELEPHONES</button>
+        <button onclick="filterCategory('disque')">DISQUES DURS</button>
 
         <button onclick="goToCart()">MON PANIER 🛒</button>
        </div>
@@ -470,12 +471,7 @@ function productMatch(item, text) {
     // J'ajoute une sécurité (.toString) au cas où le prix est un nombre
     return (item.nom && item.nom.toLowerCase().includes(text)) || 
            (item.specs && item.specs.toLowerCase().includes(text));
-}
-
-
-
-            
-
+}     
             // LA FONCTION POUR FILTRER PAR CATEGORIE✅
 
             function filterCategory(category) {
@@ -690,10 +686,6 @@ function productMatch(item, text) {
                     modal.style.display = "none";
                 }
             }
-
-
-            
-
         </script>
         <script src="script.js"></script>
            <div id="modalViderPanier" class="modal">
