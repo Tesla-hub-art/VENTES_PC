@@ -418,16 +418,63 @@
                 cart = [];
             }
 
-            //1. Variable globale pour garder les produits en mémoire
-            
-            let mesProduitsGlobal = [];
-            fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                mesProduitsGlobal = data;
-            } ) 
+            // 1. Variable globale pour garder les produits en mémoire
+let mesProduitsGlobal = []; 
 
-            o
+// 2. Ton chargement de données (Le FETCH)
+fetch('data.json') // Assure-toi que le chemin est bon
+    .then(response => response.json())
+    .then(data => {
+        // A. On sauvegarde les données dans la variable globale
+        mesProduitsGlobal = data; // ou data.produits selon ton JSON
+
+        // B. On affiche tout au début (tous les produits)
+        afficherProduits(mesProduitsGlobal);
+
+        // C. On active la barre de recherche maintenant que les données sont là !
+        activerBarreRecherche();
+    })
+    .catch(error => console.error('Erreur chargement:', error));
+
+// 4. LA NOUVELLE FONCTION DE RECHERCHE (À ajouter en bas de ton fichier)
+function activerBarreRecherche() {
+    const searchInput = document.getElementById("searchInput");
+    const noResults = document.getElementById("no-results");
+
+    // Sécurité : On vérifie que la barre existe dans le HTML
+    if(!searchInput) return; 
+
+    searchInput.addEventListener("input", (e) => {
+        const texteEcrit = e.target.value.toLowerCase();
+
+        // On filtre la liste GLOBALE (celle qu'on a remplie au début)
+        const resultats = mesProduitsGlobal.filter(produit => {
+            return productMatch(produit, texteEcrit);
+        });
+
+        // On réutilise ta fonction d'affichage avec la nouvelle liste filtrée
+        afficherProduits(resultats);
+
+        // Gestion du message "Pas de résultat"
+        if(resultats.length === 0) {
+            if(noResults) noResults.style.display = "block";
+        } else {
+            if(noResults) noResults.style.display = "none";
+        }
+    });
+}
+
+// Petite fonction helper pour garder le code propre
+function productMatch(item, text) {
+    // On cherche dans le NOM et les SPECS
+    // J'ajoute une sécurité (.toString) au cas où le prix est un nombre
+    return (item.nom && item.nom.toLowerCase().includes(text)) || 
+           (item.specs && item.specs.toLowerCase().includes(text));
+}
+
+
+
+            
 
             // LA FONCTION POUR FILTRER PAR CATEGORIE✅
 
@@ -492,7 +539,13 @@
                     
                 });
             }
+            document.getElementById("searchInput").addEventListener("input",(e) => {
+                const recherche=e.target.value.toLowerCase();
 
+                const trouves = tousMesProduits.filter(p => p.nom.toLowerCase().includes(recherche) || p.nom.toLowerCase().includes(recherche));
+
+                afficherProduits(trouves);
+            });
             window.onload=chargerCatalogue;
 
             // LA FONCTION POUR REDIRIGER VERS LE PANIER✅
