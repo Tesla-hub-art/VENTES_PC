@@ -303,12 +303,76 @@
             color: #888;
             font-size: 18px;
         }
+        .search-wrapper {
+    Position : relative ;
+    Max-width : 600px ;
+    Margin : 40px auto ;
+    Display : flex ;
+    Align-items : center ;
+    Background : #fff ;
+    Border-radius : 50px ;
+    Padding : 5px 15px ;
+    Box-shadow : 0 4px 12px rgba(0,0,0,0.08) ; /* Ombre douce */
+    Transition : box-shadow 0.3s ease ;
+}
+
+.search-wrapper :focus-within {
+    Box-shadow : 0 4px 20px rgba(0,0,0,0.15) ; /* L’ombre grandit quand on clique */
+}
+
+#searchInput {
+    Width : 100% ;
+    Border : none ;
+    Padding : 12px 10px ;
+    Font-size : 16px ;
+    Outline : none ; /* Supprime le contour bleu moche */
+}
+
+.search-icon {
+    Font-size : 18px ;
+    Color : #888 ;
+}
+
+#clearSearch {
+    Background : none ;
+    Border : none ;
+    Font-size : 22px ;
+    Color : #ccc ;
+    Cursor : pointer ;
+    Display : none ; /* Caché par défaut */
+}
+
+.quick-filters {
+    text-align: center;
+    margin-top: 10px;
+}
+.chip {
+    background: #f0f2f5;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+.chip:hover {
+    background: #007bff;
+    color: white;
+}
+
 
 
                      </style>
             <header class="header">
 
         <!--LA BARRE DE RECHERCHES-->
+        <div class= »search-wrapper »>
+    <span class= »search-icon »>🔍</span>
+    <input type= »text » id= »searchInput » placeholder= »Rechercher un modèle, une marque ou une config… »>
+    <button id= »clearSearch » title= »Effacer »>×</button>
+</div>
+
 
         <div class="search-container">
             <i class="fas fa-search search-icon"></i>
@@ -686,6 +750,7 @@ function productMatch(item, text) {
                     modal.style.display = "none";
                 }
             }
+                
         </script>
         <script src="script.js"></script>
            <div id="modalViderPanier" class="modal">
