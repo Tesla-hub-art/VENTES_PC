@@ -116,12 +116,29 @@
     {
          "LES TELEPHONES":"LA LISTE DES TELEPHONES",
 
-        "id":"PC005",
+        "id":"T001",
         "nom":"Telephone samsung",
-        "prix":1500000,
-        "specs":"Samsung A17, 128GB",
-        "image":"Static/Images/Telephones/t5.jpg",
+        "prix":1350000,
+        "specs":"Samsung A17,128GB",
+        "image":"Static/Images/Telephones/t6.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"Telephone samsung",
+        "prix":1100000,
+        "specs":"Samsung A07,128GB",
+        "image":"Static/Images/Telephones/t2.jpg",
+        "catégorie":"telephone"
+    },
+     {
+        "id":"T003",
+        "nom":"Telephone samsung",
+        "prix":950000,
+        "specs":"Samsung A07,64GB",
+        "image":"Static/Images/Telephones/t1.jpg",
         "catégorie":"telephone"
     }
+
     
 ]
