@@ -1,0 +1,12 @@
+# Query: »
+# ContextLines: 1
+
+12 results - 1 file
+
+index.html:
+  369          <!--LA BARRE DE RECHERCHES-->
+  370:         <div class= "search-wrapper ">
+  371:     <span class= "search-icon ">🔍</span>
+  372:     <input type= "text " id= "searchInput " placeholder= "Rechercher un modèle, une marque ou une config… ">
+  373:     <button id="clearSearch " title= "Effacer "> X </button>
+  374  </div>
