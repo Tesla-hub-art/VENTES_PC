@@ -120,7 +120,7 @@
         "nom":"Telephone samsung",
         "prix":1350000,
         "specs":"Samsung A17,128GB",
-        "image":"Static/Images/Telephones/t6.jpg",
+        "image":"Static/Images/Telephones/t14 128.jpg",
         "catégorie":"telephone"
     },
     {
@@ -128,7 +128,7 @@
         "nom":"Telephone samsung",
         "prix":1100000,
         "specs":"Samsung A07,128GB",
-        "image":"Static/Images/Telephones/t2.jpg",
+        "image":"Static/Images/Telephones/t13 128.jpg",
         "catégorie":"telephone"
     },
      {
@@ -136,7 +136,23 @@
         "nom":"Telephone samsung",
         "prix":950000,
         "specs":"Samsung A07,64GB",
-        "image":"Static/Images/Telephones/t1.jpg",
+        "image":"Static/Images/Telephones/t1264.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T004",
+        "nom":"Telephone samsung",
+        "prix":860000,
+        "specs":"Samsung A06, 64GB",
+        "image":"Static/Images/Telephones/t10.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T004",
+        "nom":"Telephone samsung",
+        "prix":1100000,
+        "specs":"Samsung A06, 128GB",
+        "image":"Static/Images/Telephones/t8.jpg",
         "catégorie":"telephone"
     }
 
