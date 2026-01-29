@@ -74,6 +74,15 @@
         "image":"Static/Images/hp4.jpg",
         "catégorie":"pc"
     },
+    {
+
+        "id":"PC008",
+        "nom":"HP EliteBook",
+        "prix":3900000,
+        "specs":"Core i5,SSD 512GB,RAM 16GB",
+        "image":"Static/Images/hp5.jpg",
+        "catégorie":"pc"
+    },
     
     {
          "LES CHARGEURS":"LA LISTE DES CHARGEURS",
