@@ -112,6 +112,30 @@
         "catégorie":"chargeur"
     },
     {
+        "id":"PC002",
+        "nom":"chargeurs d'ordinateurs",
+        "prix":100000,
+        "specs":"Chargeur USB pour Box WI-FI",
+        "image":"Static/Images/Chargeurs/c5.jpg",
+        "catégorie":"chargeur"
+    },
+    {
+        "id":"PC002",
+        "nom":"chargeurs d'ordinateurs",
+        "prix":100000,
+        "specs":"Chargeur USB pour Box WI-FI",
+        "image":"Static/Images/Chargeurs/c6.jpg",
+        "catégorie":"chargeur"
+    },
+    {
+        "id":"PC002",
+        "nom":"chargeurs d'ordinateurs",
+        "prix":100000,
+        "specs":"Chargeur USB pour Box WI-FI",
+        "image":"Static/Images/Chargeurs/c7.jpg",
+        "catégorie":"chargeur"
+    },
+    {
          "LES SUPPORTS":"LA LISTE DES SUPPORTS DE PC",
 
 
@@ -119,7 +143,88 @@
         "nom":"SUPPORT DE PC",
         "prix":140000,
         "specs":"haute qualité",
-        "image":"Static/Images/s2.jpg",
+        "image":"Static/Images/supports/s2.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":130000,
+        "specs":"Support de phone metallique",
+        "image":"Static/Images/supports/s3.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":130000,
+        "specs":"Support de phone metallique",
+        "image":"Static/Images/supports/s4.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":90000,
+        "specs":"Support de phone pliable",
+        "image":"Static/Images/supports/s5.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":90000,
+        "specs":"Support de phone pliable",
+        "image":"Static/Images/supports/s6.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":90000,
+        "specs":"Support de phone pliable",
+        "image":"Static/Images/supports/s7.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":130000,
+        "specs":"Support de phone metallique",
+        "image":"Static/Images/supports/s8.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":90000,
+        "specs":"Support de phone pliable",
+        "image":"Static/Images/supports/s9.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":90000,
+        "specs":"Support de phone pliable",
+        "image":"Static/Images/supports/s10.jpg",
+        "catégorie":"support"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"SUPPORT DE PHONES",
+        "prix":130000,
+        "specs":"Support de phone metallique",
+        "image":"Static/Images/supports/s11.jpg",
         "catégorie":"support"
     },
     {
@@ -163,7 +268,211 @@
         "specs":"Samsung A06, 128GB",
         "image":"Static/Images/Telephones/t8.jpg",
         "catégorie":"telephone"
-    }
+    },
+     {
+        "LES ADAPTATEURS":"LA LISTE DES TELEPHONES",
 
-    
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":180000,
+        "specs":"Adaptateur 8 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a1.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":180000,
+        "specs":"Adaptateur 8 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a3.jpg",
+        "catégorie":"adaptateur"
+    },
+     {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":280000,
+        "specs":"Adaptateur 11 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a4.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":280000,
+        "specs":"Adaptateur 11 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a5.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":280000,
+        "specs":"Adaptateur 11 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a6.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":280000,
+        "specs":"Adaptateur 11 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a7.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":280000,
+        "specs":"Adaptateur 11 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a8.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":180000,
+        "specs":"Adaptateur 8 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a9.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":180000,
+        "specs":"Adaptateur 8 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a10.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":180000,
+        "specs":"Adaptateur 8 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a10.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":180000,
+        "specs":"Adaptateur 8 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a11.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":180000,
+        "specs":"Adaptateur 8 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a12.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+        "id":"A001",
+        "nom":"ADAPTATEURS",
+        "prix":180000,
+        "specs":"Adaptateur 8 en 1 pour phone et PC",
+        "image":"Static/Images/Adaptateurs/a13.jpg",
+        "catégorie":"adaptateur"
+    },
+    {
+         "LES HDMI":"LA LISTE DES HDMI",
+
+
+        "id":"ACC001",
+        "nom":"HDMI",
+        "prix":130000,
+        "specs":"Dongle HDMI vers Mini HDMI",
+        "image":"Static/Images/HDMI/h1.jpg",
+        "catégorie":"hdmi"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"HDMI",
+        "prix":130000,
+        "specs":"Dongle HDMI vers Mini HDMI",
+        "image":"Static/Images/HDMI/h1.jpg",
+        "catégorie":"hdmi"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"HDMI",
+        "prix":130000,
+        "specs":"Dongle HDMI vers Mini HDMI",
+        "image":"Static/Images/HDMI/h2.jpg",
+        "catégorie":"hdmi"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"HDMI",
+        "prix":130000,
+        "specs":"Dongle HDMI vers Mini HDMI",
+        "image":"Static/Images/HDMI/h3.jpg",
+        "catégorie":"hdmi"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"HDMI",
+        "prix":130000,
+        "specs":"Dongle HDMI vers Mini HDMI",
+        "image":"Static/Images/HDMI/h4.jpg",
+        "catégorie":"hdmi"
+    },
+    {
+
+        "id":"ACC001",
+        "nom":"HDMI",
+        "prix":130000,
+        "specs":"Dongle HDMI vers Mini HDMI",
+        "image":"Static/Images/HDMI/h5.jpg",
+        "catégorie":"hdmi"
+    },
+    {
+        "LES PORTS":"LA LISTE DES PORTS",
+
+
+        "id":"PC000",
+        "nom":"PORTS USB ET V10",
+        "prix":45000,
+        "specs":"Type C v10 vers USB",
+        "image":"Static/Images/v10 et USB/vu1.jpg",
+        "catégorie":"usb"
+    },
+    {
+        "id":"PC000",
+        "nom":"PORTS USB ET V10",
+        "prix":45000,
+        "specs":"Type C v10 vers USB",
+        "image":"Static/Images/v10 et USB/vu1.jpg",
+        "catégorie":"usb"
+    },
+    {
+        "id":"PC000",
+        "nom":"PORTS USB ET V10",
+        "prix":45000,
+        "specs":"Type C v10 vers USB",
+        "image":"Static/Images/v10 et USB/vu2.jpg",
+        "catégorie":"usb"
+    },
+    {
+        "id":"PC000",
+        "nom":"PORTS USB ET V10",
+        "prix":45000,
+        "specs":"Type C v10 vers USB",
+        "image":"Static/Images/v10 et USB/vu3.jpg",
+        "catégorie":"usb"
+    },
+    {
+        "id":"PC000",
+        "nom":"PORTS USB ET V10",
+        "prix":45000,
+        "specs":"Type C v10 vers USB",
+        "image":"Static/Images/v10 et USB/vu4.jpg",
+        "catégorie":"usb"
+    }
+       
 ]
