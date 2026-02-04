@@ -269,6 +269,343 @@
         "image":"Static/Images/Telephones/t8.jpg",
         "catégorie":"telephone"
     },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":1800000,
+        "specs":"Iphone Xr 128GB",
+        "image":"Static/Images/Telephones/iphone/i1.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":1950000,
+        "specs":"Iphone 11 simmple 64GB",
+        "image":"Static/Images/Telephones/iphone/i2.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":2080000,
+        "specs":"Iphone 11 simmple 128GB",
+        "image":"Static/Images/Telephones/iphone/i3.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":2500000,
+        "specs":"Iphone 11 pro 64GB",
+        "image":"Static/Images/Telephones/iphone/i4.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":2500000,
+        "specs":"Iphone 11 pro 256GB",
+        "image":"Static/Images/Telephones/iphone/i5.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":2600000,
+        "specs":"Iphone 11 pro max 64GB",
+        "image":"Static/Images/Telephones/iphone/i6.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":2750000,
+        "specs":"Iphone 11 pro max 256GB",
+        "image":"Static/Images/Telephones/iphone/i7.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":2350000,
+        "specs":"Iphone 12 simple 64GB",
+        "image":"Static/Images/Telephones/iphone/i8.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":2400000,
+        "specs":"Iphone 12 simple 128GB",
+        "image":"Static/Images/Telephones/iphone/i9.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":2900000,
+        "specs":"Iphone 12 pro 128GB",
+        "image":"Static/Images/Telephones/iphone/i10.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":3100000,
+        "specs":"Iphone 12 pro 256GB",
+        "image":"Static/Images/Telephones/iphone/i11.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":3250000,
+        "specs":"Iphone 12 max 128GB",
+        "image":"Static/Images/Telephones/iphone/i12.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":3450000,
+        "specs":"Iphone 12 pro max 256GB",
+        "image":"Static/Images/Telephones/iphone/i13.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":3050000,
+        "specs":"Iphone 13 simple 64GB",
+        "image":"Static/Images/Telephones/iphone/i14.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":3800000,
+        "specs":"Iphone 13 pro 128GB",
+        "image":"Static/Images/Telephones/iphone/i15.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":4050000,
+        "specs":"Iphone 13 pro 256GB",
+        "image":"Static/Images/Telephones/iphone/i16.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":4350000,
+        "specs":"Iphone 13 pro max 128GB",
+        "image":"Static/Images/Telephones/iphone/i17.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":4550000,
+        "specs":"Iphone 13 pro max 256GB",
+        "image":"Static/Images/Telephones/iphone/i18.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":3650000,
+        "specs":"Iphone 14 simple 64GB",
+        "image":"Static/Images/Telephones/iphone/i19.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":4750000,
+        "specs":"Iphone 14 pro 128GB",
+        "image":"Static/Images/Telephones/iphone/i20.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":4950000,
+        "specs":"Iphone 14 pro 256GB",
+        "image":"Static/Images/Telephones/iphone/i21.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":4100000,
+        "specs":"Iphone 14 plus 256GB",
+        "image":"Static/Images/Telephones/iphone/i22.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":5150000,
+        "specs":"Iphone 14 pro max 128GB",
+        "image":"Static/Images/Telephones/iphone/i23.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":5400000,
+        "specs":"Iphone 14 pro max 256GB",
+        "image":"Static/Images/Telephones/iphone/i24.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":5650000,
+        "specs":"Iphone 14 pro max 18 ORG 128GB",
+        "image":"Static/Images/Telephones/iphone/i24.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":5900000,
+        "specs":"Iphone 14 pro max 256GB ORG",
+        "image":"Static/Images/Telephones/iphone/i25.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":4850000,
+        "specs":"Iphone 15 simple 128GB",
+        "image":"Static/Images/Telephones/iphone/i26.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":5350000,
+        "specs":"Iphone 15 plus 256GB",
+        "image":"Static/Images/Telephones/iphone/i27.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":6050000,
+        "specs":"Iphone 15 pro 256GB",
+        "image":"Static/Images/Telephones/iphone/i28.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":6550000,
+        "specs":"Iphone 15 pro 256GB ORG",
+        "image":"Static/Images/Telephones/iphone/i29.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":6750000,
+        "specs":"Iphone 15 pro max 256GB",
+        "image":"Static/Images/Telephones/iphone/i30.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":7450000,
+        "specs":"Iphone 15 pro max 256GB ORG",
+        "image":"Static/Images/Telephones/iphone/i31.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":6550000,
+        "specs":"Iphone 16 simple 128GB",
+        "image":"Static/Images/Telephones/iphone/i32.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":6850000,
+        "specs":"Iphone 16 simple 128GB Pink",
+        "image":"Static/Images/Telephones/iphone/i33.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":7350000,
+        "specs":"Iphone 16 plus 128GB",
+        "image":"Static/Images/Telephones/iphone/i34.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":7550000,
+        "specs":"Iphone 16 plus 128GB Pink",
+        "image":"Static/Images/Telephones/iphone/i35.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":10150000,
+        "specs":"Iphone 16 pro",
+        "image":"Static/Images/Telephones/iphone/i37.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":11850000,
+        "specs":"Iphone 16 pro max",
+        "image":"Static/Images/Telephones/iphone/i38.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":10550000,
+        "specs":"Iphone 17 air",
+        "image":"Static/Images/Telephones/iphone/i39.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":13550000,
+        "specs":"Iphone 17 pro",
+        "image":"Static/Images/Telephones/iphone/i40.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":13850000,
+        "specs":"Iphone 17 pro max Esim",
+        "image":"Static/Images/Telephones/iphone/i41.jpg",
+        "catégorie":"telephone"
+    },
+    {
+        "id":"T002",
+        "nom":"IPHONE",
+        "prix":14850000,
+        "specs":"Iphone 17 pro max avec puce",
+        "image":"Static/Images/Telephones/iphone/i42.jpg",
+        "catégorie":"telephone"
+    },
+    
      {
         "LES ADAPTATEURS":"LA LISTE DES TELEPHONES",
 
