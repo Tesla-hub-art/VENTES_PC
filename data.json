@@ -817,7 +817,7 @@
         "id":"A001",
         "nom":"POWER BANK",
         "prix":180000,
-        "specs":"Power bank 30.000 mah",
+        "specs":"Power bank 300.000 mah",
         "image":"Static/Images/power/p1.jpg",
         "catégorie":"power"
     },
@@ -826,7 +826,7 @@
         "id":"A001",
         "nom":"POWER BANK",
         "prix":180000,
-        "specs":"Power bank 30.000 mah",
+        "specs":"Power bank 300.000 mah",
         "image":"Static/Images/power/p2.jpg",
         "catégorie":"power"
     },
@@ -835,7 +835,7 @@
         "id":"A001",
         "nom":"POWER BANK",
         "prix":160000,
-        "specs":"Power bank 20.000 mah",
+        "specs":"Power bank 200.000 mah",
         "image":"Static/Images/power/p4.jpg",
         "catégorie":"power"
     },
@@ -844,8 +844,26 @@
         "id":"A001",
         "nom":"POWER BANK",
         "prix":160000,
-        "specs":"Power bank 20.000 mah",
+        "specs":"Power bank 200.000 mah",
         "image":"Static/Images/power/p5.jpg",
+        "catégorie":"power"
+    },
+    {
+
+        "id":"A001",
+        "nom":"POWER BANK",
+        "prix":230000,
+        "specs":"Power bank chargeable 500.000 mah",
+        "image":"Static/Images/power/p6.jpg",
+        "catégorie":"power"
+    },
+    {
+
+        "id":"A001",
+        "nom":"POWER BANK",
+        "prix":190000,
+        "specs":"Power bank chargeable au soleil 300.000 mah",
+        "image":"Static/Images/power/p8.jpg",
         "catégorie":"power"
     },
     {
