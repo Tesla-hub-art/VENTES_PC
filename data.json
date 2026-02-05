@@ -607,7 +607,7 @@
     },
     
      {
-        "LES ADAPTATEURS":"LA LISTE DES TELEPHONES",
+        "LES ADAPTATEURS":"LA LISTE DES ADAPTATEURS",
 
         "id":"A001",
         "nom":"ADAPTATEURS",
@@ -810,6 +810,54 @@
         "specs":"Type C v10 vers USB",
         "image":"Static/Images/v10 et USB/vu4.jpg",
         "catégorie":"usb"
+    },
+    {
+        "LES POWER BANK":"LA LISTE DES POWER BANK",
+
+        "id":"A001",
+        "nom":"POWER BANK",
+        "prix":180000,
+        "specs":"Power bank 30.000 mah",
+        "image":"Static/Images/power/p1.jpg",
+        "catégorie":"power"
+    },
+    {
+
+        "id":"A001",
+        "nom":"POWER BANK",
+        "prix":180000,
+        "specs":"Power bank 30.000 mah",
+        "image":"Static/Images/power/p2.jpg",
+        "catégorie":"power"
+    },
+    {
+
+        "id":"A001",
+        "nom":"POWER BANK",
+        "prix":160000,
+        "specs":"Power bank 20.000 mah",
+        "image":"Static/Images/power/p4.jpg",
+        "catégorie":"power"
+    },
+    {
+
+        "id":"A001",
+        "nom":"POWER BANK",
+        "prix":160000,
+        "specs":"Power bank 20.000 mah",
+        "image":"Static/Images/power/p5.jpg",
+        "catégorie":"power"
+    },
+    {
+        "LES AIRPOD":"LA LISTE DES AIRPOD",
+
+        "id":"A001",
+        "nom":"AIRPOD",
+        "prix":180000,
+        "specs":"Power bank 30.000 mah",
+        "image":"Static/Images/airpod/pod1.jpg",
+        "catégorie":"power"
     }
+
        
 ]
