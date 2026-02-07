@@ -89,39 +89,39 @@
 
 
         "id":"PC002",
-        "nom":"chargeurs d'ordinateurs",
+        "nom":"CHARGEUR",
         "prix":150000,
-        "specs":"Core i7,SSD 512GB,RAM 16GB",
+        "specs":"Chargeur port v10",
         "image":"Static/Images/Chargeurs/c1.jpg",
         "catégorie":"chargeur"
     },
     {
         "id":"PC002",
-        "nom":"chargeurs d'ordinateurs",
+        "nom":"CHARGEUR",
         "prix":150000,
-        "specs":"Core i7,SSD 512GB,RAM 16GB",
+        "specs":"Chargeur port v10",
         "image":"Static/Images/Chargeurs/c2.jpg",
         "catégorie":"chargeur"
     },
     {
         "id":"PC002",
-        "nom":"chargeurs d'ordinateurs",
+        "nom":"CHARGEUR",
         "prix":150000,
-        "specs":"Core i7,SSD 512GB,RAM 16GB",
+        "specs":"Chargeur pc bout bleu",
         "image":"Static/Images/Chargeurs/c4.jpg",
         "catégorie":"chargeur"
     },
     {
         "id":"PC002",
-        "nom":"chargeurs d'ordinateurs",
+        "nom":"CHARGEUR",
         "prix":100000,
-        "specs":"Chargeur USB pour Box WI-FI",
+        "specs":"Chargeur Box WI-FI",
         "image":"Static/Images/Chargeurs/c5.jpg",
         "catégorie":"chargeur"
     },
     {
         "id":"PC002",
-        "nom":"chargeurs d'ordinateurs",
+        "nom":"chargeur Box Wi-Fi",
         "prix":100000,
         "specs":"Chargeur USB pour Box WI-FI",
         "image":"Static/Images/Chargeurs/c6.jpg",
@@ -131,7 +131,7 @@
         "id":"PC002",
         "nom":"chargeurs d'ordinateurs",
         "prix":100000,
-        "specs":"Chargeur USB pour Box WI-FI",
+        "specs":"Chargeur Box WI-FI",
         "image":"Static/Images/Chargeurs/c7.jpg",
         "catégorie":"chargeur"
     },
