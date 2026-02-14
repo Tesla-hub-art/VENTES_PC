@@ -902,6 +902,17 @@
         "specs":"Performence hhd",
         "image":"Static/Images/Disques/dis31tera.jpg",
         "catégorie":"disque"
+    },
+    {
+         "LES BATTERIES":"LA LISTE DES BATTERIES",
+
+
+        "id":"ACC001",
+        "nom":"BATTERIE DE PC",
+        "prix":280000,
+        "specs":"Btterie de PC hp",
+        "image":"Static/Images/Batterie/bathp1.jpg",
+        "catégorie":"batterie"
     }
 
        
