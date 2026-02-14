@@ -875,6 +875,33 @@
         "specs":"Airpod AP6",
         "image":"Static/Images/airpod/pod1.jpg",
         "catégorie":"power"
+    },
+    {
+         "LES DISQUES":"LA LISTE DES DISQUES DURS",
+
+
+        "id":"ACC001",
+        "nom":"DISQUE DUR EXTERNE",
+        "prix":290000,
+        "specs":"Performence hhd",
+        "image":"Static/Images/Disques/dis2320.jpg",
+        "catégorie":"disque"
+    },
+    {
+     "id":"ACC001",
+        "nom":"DISQUE DUR EXTERNE",
+        "prix":350000,
+        "specs":"Performence hhd",
+        "image":"Static/Images/Disques/dis1500.jpg",
+        "catégorie":"disque"
+    },
+    {
+     "id":"ACC001",
+        "nom":"DISQUE DUR EXTERNE",
+        "prix":350000,
+        "specs":"Performence hhd",
+        "image":"Static/Images/Disques/dis31tera.jpg",
+        "catégorie":"disque"
     }
 
        
