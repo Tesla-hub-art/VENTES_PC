@@ -322,11 +322,73 @@
             color: #888;
             font-size: 18px;
         }
+        .about-section{
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .about-btn {
+            background: linear-gradient(135deg,#1f2937,#374151);
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .about-btn:hover {
+            transform: scale(1.05);
+        }
+        .about-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            background-color: #111857;
+            color: white;
+            border-radius: 20px;
+            margin-top: 15px;
+            padding: 0 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        .about-content h2 {
+            background: #0f172a;
+            padding: 15px;
+            margin: 0;
+            border-radius: 20px 20px 0 0;
+        }
+        .about-content p {
+            padding: 20px;
+            font-size: 15px;
+            line-height: 1.6s;
+        }
 
                     </style>
             <header class="header">
 
         <!--ENTETE ET NOM DU MARCHE EN LIGNE ✅-->
+
+        <div class="about-section">
+            <button class="about-btn" onclick="toggleAbout()">A propos de SHOPY</button>
+
+            <div id="aboutContent" class="about-content">
+                <h2>SHOPY</h2>
+                <p>
+                    SHOPY est une plateforme spécialisée dans la vente d'equipements inforatiques, téléphones et accessoires 
+                    numériques.
+
+                    <br><br>
+                    Notre objectif est de fournir des produits fiables, sécurisés et accessibles 24h/24 avec un service rapide et professionnel
+
+                    <br><br>
+
+                    ✔️Paiement sécurisé 
+                    ✔️Livraison rapide
+                    ✔️Assistance disponible
+                    ✔️Produits de qualités
+                    </p>
+                </div>
+            </div>
             
         <div class="logo">
          <h1>SHOPY</h1>
@@ -650,6 +712,15 @@ function productMatch(item, text) {
                 localStorage.setItem("cart",JSON.stringify(cart));
                 updateCart();
             };
+            function toggleAbout() {
+                var content= document.getElementById("aboutContent");
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight=null;
+                } else {
+                    content.style.maxHeight=content.scrollHeight + "px";
+                }
+            }
 
             // LA FONCTION POUR DIRE AJOUTER UN PRODUIT SI RIEN DANS LE PRODUIT
 
