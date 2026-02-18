@@ -489,8 +489,11 @@
 }
 #videoReviewContent {
     display: flex;
-    gap: 20px;overflow-x: auto;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
     padding: 20px 0;
+    scroll-behavior: smooth;
 }
 
                     </style>
@@ -628,7 +631,7 @@
     <section class="shopy-video-reviews">
     <h2 onclick="toggleVideoReviews()" style="cursor:pointer;">Avis Vidéos</h2>
 
-    <div id="videoReviewsContent" style="max-height:0; overflow:hidden; transition:0.5s ease;">
+    <div id="videoReviewsContent" style="max-height:0px; transition:0.5s ease;">
         
         <div class="shopy-video-container">
             <video controls>
