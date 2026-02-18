@@ -418,6 +418,8 @@
 
 .shopy-video-container {
     max-width: 90px;
+    min-width: 60px;
+    flex-shrink: 0;
     width: 20%;
     border-radius: 15px;
     overflow: hidden;
@@ -484,6 +486,11 @@
 
 .shopy-review-form button:hover {
     transform: scale(1.05);
+}
+#videoReviewContent {
+    display: flex;
+    gap: 20px;overflow-x: auto;
+    padding: 20px 0;
 }
 
                     </style>
