@@ -417,8 +417,8 @@
 }
 
 .shopy-video-container {
-    max-width: 600px;
-    width: 100%;
+    max-width: 400px;
+    width: 80%;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
@@ -876,10 +876,10 @@ function productMatch(item, text) {
              function toggleVideoReviews() {
                 var content = document.getElementById("videoReviewsContent");
 
-                    if(content.style.maxHeight){
-                        content.style.maxHeight = null;
-                    } else {
+                    if(content.style.maxHeight==="0px" || content.style.maxHeight==="") {
                         content.style.maxHeight = content.scrollHeight + "px";
+                    } else {
+                        content.style.maxHeight = "0px";
     }
 }
 
