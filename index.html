@@ -413,11 +413,11 @@
                     </style>
             <header class="header">
 
-                <!--AFFICHAGE DU LOGO DU SITE-->>
+                <!--AFFICHAGE DU LOGO DU SITE-->
                 
                 <div class="logo-container">
                     <img src="Static/Images/logo_shopy.png" alt="SHOPY Logo">
-                    </div>
+                </div>
 
         <!--ENTETE ET NOM DU MARCHE EN LIGNE ✅-->
 
@@ -443,10 +443,11 @@
                 </div>
             </div>
 
-            <section class="shopy-why">
-                <h2>Pourqoui choisir SHOPY ?</h2>
+            <div class="about-section">
+            <button class="about-btn" onclick="togglewhy()">Pourqoui choisir SHOPY ?</button>
 
-                <div class="shopy-why-container">
+            <div id="WhyContent" class="shopy-why-container" style="max-height: 0; overflow: hidden;transition: 0.5s ease;">
+
                     <div class="shopy-box">
                         <h3>🔒Paiement sécurisé</h3>
                         <p>Vos transactions sont protégées et sécurisées pour garantir votre tranquilité.</p>
@@ -467,13 +468,6 @@
                         <p>support client réactif via WhatsApp et autres moyens de contact.</p>
                     </div>
                 </div>
-            </section>
-
-            
-        <div class="logo">
-         <h1>SHOPY</h1>
-         <p>EQUIPEMENTS INFORMATIQUES TELEPHONES ET AUTRES ACCESSOIRES NUMERIQUES A VOTRE DISPOSITION 24H/24</p>
-         </div>
         
          <!--CLASSEMENT DES PRODUITS PAR CATEGORIE ✅-->
 
@@ -797,6 +791,18 @@ function productMatch(item, text) {
             
             function toggleAbout() {
                 var content= document.getElementById("aboutContent");
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight=null;
+                } else {
+                    content.style.maxHeight=content.scrollHeight + "px";
+                }
+            }
+
+            // FONCTION POUR AFFICHER LE CONTENU DE POURQUOI CHOISIR SHOPY ?
+            
+            function togglewhy() {
+                var content= document.getElementById("WhyContent");
 
                 if (content.style.maxHeight) {
                     content.style.maxHeight=null;
