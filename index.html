@@ -362,9 +362,62 @@
             font-size: 15px;
             line-height: 1.6s;
         }
+        .main-header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #0f172a;
+        }
+        .logo-container img {
+            height: 50px;
+            width: auto;
+        }
+        .shopy-why {
+            background: #0f172a;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .shopy-why h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        .shopy-why-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .shopy-box {
+            background:#1e293b;
+            padding: 25px;
+            border-radius: 20px;
+            transition: 0.3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        .shopy-box:hover {
+            transform: translateY(-8px);
+            background: #334155;
+        }
+        .shopy-box h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .shopy-box p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
 
                     </style>
             <header class="header">
+
+                <!--AFFICHAGE DU LOGO DU SITE-->>
+                
+                <div class="logo-container">
+                    <img src="Static/Images/logo_shopy.png" alt="SHOPY Logo">
+                    </div>
 
         <!--ENTETE ET NOM DU MARCHE EN LIGNE ✅-->
 
@@ -389,6 +442,33 @@
                     </p>
                 </div>
             </div>
+
+            <section class="shopy-why">
+                <h2>Pourqoui choisir SHOPY ?</h2>
+
+                <div class="shopy-why-container">
+                    <div class="shopy-box">
+                        <h3>🔒Paiement sécurisé</h3>
+                        <p>Vos transactions sont protégées et sécurisées pour garantir votre tranquilité.</p>
+                    </div>
+
+                    <div class="shopy-box">
+                        <h3>🚚Livraison rapide que possible</h3>
+                        <p>Nous livrons vos commandes dans les meilleurs délais avec sérieux.</p>
+                    </div>
+
+                    <div class="shopy-box">
+                        <h3>⭐ Produits de qualité</h3>
+                        <p>Des équipements fiables et testés pour repondre à vos besoins.</p>
+                    </div>
+
+                    <div class="shopy-box">
+                        <h3>📞Assistance disponible</h3>
+                        <p>support client réactif via WhatsApp et autres moyens de contact.</p>
+                    </div>
+                </div>
+            </section>
+
             
         <div class="logo">
          <h1>SHOPY</h1>
@@ -712,6 +792,9 @@ function productMatch(item, text) {
                 localStorage.setItem("cart",JSON.stringify(cart));
                 updateCart();
             };
+
+            // FONCTION POUR AFFICHER LE CONTENU DE A PROPOS
+            
             function toggleAbout() {
                 var content= document.getElementById("aboutContent");
 
