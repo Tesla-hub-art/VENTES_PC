@@ -409,6 +409,79 @@
             font-size: 14px;
             line-height: 1.6;
         }
+        .shopy-video-section {
+    background: #0f172a;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.shopy-video-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.shopy-video-container video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+.shopy-reviews {
+    background: #111827;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.shopy-review-box {
+    background: #1e293b;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.shopy-review-box h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #9ca3af;
+}
+.shopy-review-form {
+    background: #0f172a;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.shopy-review-form form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shopy-review-form input,
+.shopy-review-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.shopy-review-form button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shopy-review-form button:hover {
+    transform: scale(1.05);
+}
 
                     </style>
             <header class="header">
@@ -444,7 +517,7 @@
             </div>
 
             <div class="about-section">
-                <button class="about-btn" onclick="togglewhy()">Pourqoui choisir SHOPY ?</button>
+                <button class="about-btn" onclick="togglewhy()">Pourquoi choisir SHOPY ?</button>
 
             <div id="WhyContent" class="about-content">
                 <div class="shopy-why-container">
@@ -542,6 +615,46 @@
             <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#2c3e50;"></path>
         </svg>
     </div>
+
+    <section class="shopy-video-section">
+    <h2>Avis Client en Vidéo</h2>
+
+    <div class="shopy-video-container">
+        <video controls>
+            <source src="video-client.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>
+</section>
+
+<section class="shopy-reviews">
+    <h2>Avis Clients</h2>
+
+    <div class="shopy-review-box">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Service rapide et produit de très bonne qualité. Je recommande SHOPY !</p>
+        <h4>- Jean M.</h4>
+    </div>
+
+    <div class="shopy-review-box">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Livraison rapide et très sérieux. Merci SHOPY.</p>
+        <h4>- Amina K.</h4>
+    </div>
+
+</section>
+
+<section class="shopy-review-form">
+    <h2>Laisser un avis</h2>
+
+    <form>
+        <input type="text" placeholder="Votre nom" required>
+        <textarea placeholder="Votre avis..." required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+ 
+
 
     <footer class="site-footer">
     <div class="footer-content">
