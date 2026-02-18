@@ -618,6 +618,27 @@
             <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#2c3e50;"></path>
         </svg>
     </div>
+    <section class="shopy-video-reviews">
+    <h2 onclick="toggleVideoReviews()" style="cursor:pointer;">Avis Vidéos</h2>
+
+    <div id="videoReviewsContent" style="max-height:0; overflow:hidden; transition:0.5s ease;">
+        
+        <div class="shopy-video-container">
+            <video controls>
+                <source src="Static/Images/avis/client1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="shopy-video-container">
+            <video controls>
+                <source src="Static/Images/avis/client1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Ajouter autant de vidéos que nécessaire -->
+
+    </div>
+</section>
 
     <section class="shopy-video-section">
     <h2>Avis Client en Vidéo</h2>
@@ -861,6 +882,17 @@ function productMatch(item, text) {
 
                 totalSpan.innerText = total.toLocaleString() + " GNF";
              }
+             // FONCTION POUR AFFICHER LES VIDEOS
+
+             function toggleVideoReviews() {
+                var content = document.getElementById("videoReviewsContent");
+
+                    if(content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}
 
             // LA FONCTION POUR DIRIGER LE PANIER VERS WHATSAPP
         
