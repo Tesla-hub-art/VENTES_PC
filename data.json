@@ -899,8 +899,32 @@
      "id":"ACC001",
         "nom":"DISQUE DUR EXTERNE",
         "prix":350000,
-        "specs":"Performence hhd",
+        "specs":"Performence hhd 1 Tera ",
         "image":"Static/Images/Disques/dis31tera.jpg",
+        "catégorie":"disque"
+    },
+    {
+     "id":"ACC001",
+        "nom":"DISQUE DUR INTERNE",
+        "prix":350000,
+        "specs":"Performence ssd 256 Go",
+        "image":"Static/Images/Disques/disint256.jpg",
+        "catégorie":"disque"
+    },
+    {
+     "id":"ACC001",
+        "nom":"DISQUE DUR INTERNE",
+        "prix":700000,
+        "specs":"Performence ssd 512 Go",
+        "image":"Static/Images/Disques/disint500.jpg",
+        "catégorie":"disque"
+    },
+    {
+     "id":"ACC001",
+        "nom":"DISQUE DUR INTERNE",
+        "prix":700000,
+        "specs":"Performence ssd 500 Go NVME",
+        "image":"Static/Images/Disques/disint500.jpg",
         "catégorie":"disque"
     },
     {
@@ -910,7 +934,7 @@
         "id":"ACC001",
         "nom":"BATTERIE DE PC",
         "prix":280000,
-        "specs":"Btterie de PC hp",
+        "specs":"Batterie de PC hp",
         "image":"Static/Images/Batterie/bathp1.jpg",
         "catégorie":"batterie"
     }
