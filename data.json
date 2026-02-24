@@ -90,16 +90,16 @@
 
         "id":"PC002",
         "nom":"CHARGEUR",
-        "prix":150000,
-        "specs":"Chargeur port v10",
+        "prix":202500,
+        "specs":"Chargeur type c port v10",
         "image":"Static/Images/Chargeurs/c1.jpg",
         "catégorie":"chargeur"
     },
     {
         "id":"PC002",
         "nom":"CHARGEUR",
-        "prix":150000,
-        "specs":"Chargeur port v10",
+        "prix":202500,
+        "specs":"Chargeur type c port v10",
         "image":"Static/Images/Chargeurs/c2.jpg",
         "catégorie":"chargeur"
     },
@@ -141,7 +141,7 @@
 
         "id":"ACC001",
         "nom":"SUPPORT DE PC",
-        "prix":140000,
+        "prix":162000,
         "specs":"haute qualité",
         "image":"Static/Images/supports/s2.jpg",
         "catégorie":"support"
@@ -151,7 +151,7 @@
 
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":180000,
+        "prix":216000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a1.jpg",
         "catégorie":"adaptateur"
@@ -159,7 +159,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":180000,
+        "prix":216000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a3.jpg",
         "catégorie":"adaptateur"
@@ -167,7 +167,7 @@
      {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":280000,
+        "prix":351000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a4.jpg",
         "catégorie":"adaptateur"
@@ -175,7 +175,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":280000,
+        "prix":351000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a5.jpg",
         "catégorie":"adaptateur"
@@ -183,7 +183,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":280000,
+        "prix":351000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a6.jpg",
         "catégorie":"adaptateur"
@@ -191,7 +191,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":280000,
+        "prix":351000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a7.jpg",
         "catégorie":"adaptateur"
@@ -199,7 +199,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":280000,
+        "prix":351000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a8.jpg",
         "catégorie":"adaptateur"
@@ -207,7 +207,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":180000,
+        "prix":216000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a9.jpg",
         "catégorie":"adaptateur"
@@ -215,7 +215,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":180000,
+        "prix":216000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a10.jpg",
         "catégorie":"adaptateur"
@@ -223,7 +223,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":180000,
+        "prix":216000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a10.jpg",
         "catégorie":"adaptateur"
@@ -231,7 +231,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":180000,
+        "prix":216000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a11.jpg",
         "catégorie":"adaptateur"
@@ -239,7 +239,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":180000,
+        "prix":216000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a12.jpg",
         "catégorie":"adaptateur"
@@ -247,7 +247,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":180000,
+        "prix":216000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a13.jpg",
         "catégorie":"adaptateur"
@@ -258,7 +258,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":130000,
+        "prix":148500,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h1.jpg",
         "catégorie":"hdmi"
@@ -267,16 +267,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":130000,
-        "specs":"Dongle HDMI vers Mini HDMI",
-        "image":"Static/Images/HDMI/h1.jpg",
-        "catégorie":"hdmi"
-    },
-    {
-
-        "id":"ACC001",
-        "nom":"HDMI",
-        "prix":130000,
+        "prix":148500,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h2.jpg",
         "catégorie":"hdmi"
@@ -285,7 +276,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":130000,
+        "prix":148500,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h3.jpg",
         "catégorie":"hdmi"
@@ -294,7 +285,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":130000,
+        "prix":148500,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h4.jpg",
         "catégorie":"hdmi"
@@ -303,53 +294,10 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":130000,
+        "prix":148500,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h5.jpg",
         "catégorie":"hdmi"
-    },
-    {
-        "LES PORTS":"LA LISTE DES PORTS",
-
-
-        "id":"PC000",
-        "nom":"PORTS USB ET V10",
-        "prix":45000,
-        "specs":"Type C v10 vers USB",
-        "image":"Static/Images/v10 et USB/vu1.jpg",
-        "catégorie":"usb"
-    },
-    {
-        "id":"PC000",
-        "nom":"PORTS USB ET V10",
-        "prix":45000,
-        "specs":"Type C v10 vers USB",
-        "image":"Static/Images/v10 et USB/vu1.jpg",
-        "catégorie":"usb"
-    },
-    {
-        "id":"PC000",
-        "nom":"PORTS USB ET V10",
-        "prix":45000,
-        "specs":"Type C v10 vers USB",
-        "image":"Static/Images/v10 et USB/vu2.jpg",
-        "catégorie":"usb"
-    },
-    {
-        "id":"PC000",
-        "nom":"PORTS USB ET V10",
-        "prix":45000,
-        "specs":"Type C v10 vers USB",
-        "image":"Static/Images/v10 et USB/vu3.jpg",
-        "catégorie":"usb"
-    },
-    {
-        "id":"PC000",
-        "nom":"PORTS USB ET V10",
-        "prix":45000,
-        "specs":"Type C v10 vers USB",
-        "image":"Static/Images/v10 et USB/vu4.jpg",
-        "catégorie":"usb"
     },
     {
         "LES POWER BANK":"LA LISTE DES POWER BANK",
@@ -430,7 +378,7 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR EXTERNE",
-        "prix":350000,
+        "prix":270000,
         "specs":"Performence hhd",
         "image":"Static/Images/Disques/dis1500.jpg",
         "catégorie":"disque"
@@ -438,7 +386,7 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR EXTERNE",
-        "prix":350000,
+        "prix":540000,
         "specs":"Performence hhd 1 Tera ",
         "image":"Static/Images/Disques/dis31tera.jpg",
         "catégorie":"disque"
@@ -446,7 +394,7 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR INTERNE",
-        "prix":350000,
+        "prix":337000,
         "specs":"Performence ssd 256 Go",
         "image":"Static/Images/Disques/disint256.jpg",
         "catégorie":"disque"
@@ -454,7 +402,7 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR INTERNE",
-        "prix":700000,
+        "prix":675000,
         "specs":"Performence ssd 512 Go",
         "image":"Static/Images/Disques/disint500.jpg",
         "catégorie":"disque"
@@ -462,8 +410,8 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR INTERNE",
-        "prix":700000,
-        "specs":"Performence ssd 500 Go NVME",
+        "prix":675000,
+        "specs":"Performence ssd 512 Go NVME",
         "image":"Static/Images/Disques/disint500.jpg",
         "catégorie":"disque"
     },
@@ -473,9 +421,33 @@
 
         "id":"ACC001",
         "nom":"BATTERIE DE PC",
-        "prix":280000,
+        "prix":432000,
         "specs":"Batterie de PC hp",
         "image":"Static/Images/Batterie/bathp1.jpg",
+        "catégorie":"batterie"
+    },
+    {
+        "id":"ACC001",
+        "nom":"BATTERIE DE PC",
+        "prix":432000,
+        "specs":"Batterie de PC Apple",
+        "image":"Static/Images/Batterie/batapple1.jpg",
+        "catégorie":"batterie"
+    },
+    {
+        "id":"ACC001",
+        "nom":"BATTERIE DE PC",
+        "prix":432000,
+        "specs":"Batterie de PC Dell ",
+        "image":"Static/Images/Batterie/batdell1.jpg",
+        "catégorie":"batterie"
+    },
+    {
+        "id":"ACC001",
+        "nom":"BATTERIE DE PC",
+        "prix":432000,
+        "specs":"Batterie de PC Lenovo ",
+        "image":"Static/Images/Batterie/batleno.jpg",
         "catégorie":"batterie"
     }
 
