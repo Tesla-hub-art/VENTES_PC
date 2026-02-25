@@ -417,7 +417,7 @@
 }
 
 .shopy-video-container {
-    max-width: 90px;
+    max-width: 100px;
     width: 20%;
     border-radius: 15px;
     overflow: hidden;
@@ -484,6 +484,14 @@
 
 .shopy-review-form button:hover {
     transform: scale(1.05);
+}
+#videoReviewsContent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 0;
 }
 
                     </style>
@@ -682,7 +690,7 @@
             <ul>
                 <li><a href="#" onclick="filterCategory('all')">Nos Produits</a></li>
                 <li><a href="#" onclick="goToCart()">Mon Panier</a></li>
-                <li><a href="#" onclick="toggleAbout">À propos</a></li>
+                <li><a href="#" onclick="toggleAbout()">À propos</a></li>
             </ul>
         </div>
     </div>
