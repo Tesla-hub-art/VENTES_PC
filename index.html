@@ -879,10 +879,10 @@ function productMatch(item, text) {
              function toggleVideoReviews() {
                 var content = document.getElementById("videoReviewsContent");
 
-                    if(content.style.maxHeight==="0px" || content.style.maxHeight==="") {
-                        content.style.maxHeight = content.scrollHeight + "px";
+                    if(content.style.display==="flex") {
+                        content.style.display = "none";
                     } else {
-                        content.style.maxHeight = "0px";
+                        content.style.display = "flex";
     }
 }
 
