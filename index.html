@@ -815,7 +815,7 @@ function productMatch(item, text) {
                         <div class="prix">${Number(p.prix).toLocaleString()} GNF</div>
 
                         <button onclick="addToCart(this)">Ajouter au panier🛒</button>
-                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("COMMANDE SHOPY: " + p.nom + p.prix)}" 
+                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("COMMANDE SHOPY\n\n: " + p.nom + p.prix + "GNF")}" 
                         class="btn-whatsapp" target="_blank" style="display:block"; background:#25D366; color:white; padding:10px;
                         border-radius: 8px; text-decoration:none; margin-top:10px
                         text-align:center;">Commander via WhatsApp</a>`;
