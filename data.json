@@ -17,6 +17,7 @@
         "id":"PC001",
         "nom":"VICTUS",
         "prix":11155000,
+        "prixpromo":8924000,
         "specs":"Core i5,SSD 512GB,RAM 16GB",
         "image":"Static/Images/victus.jpg",
         "catégorie":"pc"
