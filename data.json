@@ -7,7 +7,6 @@
         "id":"PC000",
         "nom":"DELL LATITUDE",
         "prix":2990000,
-        "prixpromo":2390000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/dell1.jpg",
         "catégorie":"pc"
@@ -17,7 +16,6 @@
         "id":"PC001",
         "nom":"VICTUS",
         "prix":11155000,
-        "prixpromo":8924000,
         "specs":"Core i5,SSD 512GB,RAM 16GB",
         "image":"Static/Images/victus.jpg",
         "catégorie":"pc"
