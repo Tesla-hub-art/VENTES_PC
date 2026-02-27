@@ -494,20 +494,25 @@
     padding: 20px 0;
 } 
 .block-prix {
-    margin: 15px 0;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2px;
 }
 .ancien-prix {
-    color: #a0a0a0;
-    text-decoration: line-through;
-    font-size: 0.9em;
+    color: #999 !important;
+    text-decoration: line-through !important;
+    font-size: 14px;
+    font-weight: normal;
 }
 .nouveau-prix {
-    color: #e74c3c;
-    font-size: 1.4em;
+    color: #27ae60;
+    font-size: 20px;
     font-weight: bold;
+}
+.nouveau-prix.promo {
+    color: #27ae60;
 }
 .badge-reduc {
     background: #e74c3c;
@@ -516,7 +521,7 @@
     border-radius: 4px;
     text-decoration: none !important;
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 12px;
     margin-left: 5px;
 }
 
@@ -835,19 +840,21 @@ function productMatch(item, text) {
                     carte.setAttribute('data-prix', p.prix);
 
                     let prixHTML="";
-                    if(p.prix_promo&&p.prix_promo>0) {
+                    const prixnormal=Number(p.prix);
+                    const prixpromo=p.prix_promo ? Number(p.prix_promo) : 0;
+
+                    if(prixpromo > 0 && prixpromo < prixnormal) {
                         // calcul du pourcentage de reduction
-                        const reduction=Math.round(((p.prix - p.prix_promo) / p.prix)*100);
+                        const reduction=Math.round(((prixnormal - prixpromo) / prixnormal) * 100);
                         prixHTML=`
                             <div class="bloc-prix">
-                                <span class="ancien-prix">${Number(p.prix).toLocaleString()} GNF
-                                <span class="badge-reduc">-${reduction}%</span>
-                                <div class="nouveau-prix">${Number(p.prix_promo).toLocaleString()} GNF</div>
+                                <span class="ancien-prix">${prixnormal.toLocaleString()} GNF</span>
+                                <span class="nouveau-prix promo">${prixpromo.toLocaleString()} GNF<small class="badge-reduc">-${reduction}%</small></span>
                                 </div>`;
                     } else {
                         prixHTML=`<div class="bloc-prix">
-                                    <div class="nouveau-prix">${Number(p.prix).toLocaleString()} GNF</div>
-                                    </div>`;
+                                    <span class="nouveau-prix">${prixnormal.toLocaleString()} GNF</span>
+                                </div>`;
                     }
 
                     carte.innerHTML = `
