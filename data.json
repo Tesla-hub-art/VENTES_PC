@@ -7,6 +7,7 @@
         "id":"PC000",
         "nom":"DELL LATITUDE",
         "prix":2990000,
+        "prixpromo":2390000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/dell1.jpg",
         "catégorie":"pc"

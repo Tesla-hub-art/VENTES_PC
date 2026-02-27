@@ -493,6 +493,32 @@
     overflow-y: hidden;
     padding: 20px 0;
 } 
+.block-prix {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ancien-prix {
+    color: #a0a0a0;
+    text-decoration: line-through;
+    font-size: 0.9em;
+}
+.nouveau-prix {
+    color: #e74c3c;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.badge-reduc {
+    background: #e74c3c;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
 
                     </style>
             <header class="header">
@@ -808,14 +834,30 @@ function productMatch(item, text) {
                     carte.setAttribute('data-nom', p.nom);
                     carte.setAttribute('data-prix', p.prix);
 
+                    let prixHTML="";
+                    if(p.prix_promo) {
+                        // calcul du pourcentage de reduction
+                        const reduction=Math.round(((p.prix - p.prix_promo) / p.prix)*100);
+                        prixHTML=`
+                            <div class="bloc-prix">
+                                <span class="ancien-prix">${Number(p.prix).toLocaleString()} GNF
+                                <small class="badge-reduc">-${reduction}%</small></span>
+                                <div class="nouveau-prix">${Number(p.prix_promo).toLocaleString()} GNF</div>
+                                </div>`;
+                    } else {
+                        prixHTML=`<div class="bloc-prix">
+                                    <div class="nouveau-prix">${Number(p.prix_promo).toLocaleString()} GNF</div>`;
+                    }
+
                     carte.innerHTML = `
                         <img src="${p.image}" alt="${p.nom}">
                         <h3>${p.nom}</h3>
                         <p>${p.specs}</p>
+                        ${prixHTML}
                         <div class="prix">${Number(p.prix).toLocaleString()} GNF</div>
 
                         <button onclick="addToCart(this)">Ajouter au panier🛒</button>
-                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("COMMANDE SHOPY\n\n: " + p.nom + p.prix + "GNF")}" 
+                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("COMMANDE SHOPY\n\nProduit: " + p.nom +"\nprix: " +(p.prix_promo ? p.prix_promo : p.prix + "GNF"))};
                         class="btn-whatsapp" target="_blank" style="display:block"; background:#25D366; color:white; padding:10px;
                         border-radius: 8px; text-decoration:none; margin-top:10px
                         text-align:center;">Commander via WhatsApp</a>`;
