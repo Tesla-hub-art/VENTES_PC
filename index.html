@@ -835,18 +835,19 @@ function productMatch(item, text) {
                     carte.setAttribute('data-prix', p.prix);
 
                     let prixHTML="";
-                    if(p.prix_promo) {
+                    if(p.prix_promo&&p.prix_promo>0) {
                         // calcul du pourcentage de reduction
                         const reduction=Math.round(((p.prix - p.prix_promo) / p.prix)*100);
                         prixHTML=`
                             <div class="bloc-prix">
                                 <span class="ancien-prix">${Number(p.prix).toLocaleString()} GNF
-                                <small class="badge-reduc">-${reduction}%</small></span>
+                                <span class="badge-reduc">-${reduction}%</span>
                                 <div class="nouveau-prix">${Number(p.prix_promo).toLocaleString()} GNF</div>
                                 </div>`;
                     } else {
                         prixHTML=`<div class="bloc-prix">
-                                    <div class="nouveau-prix">${Number(p.prix_promo).toLocaleString()} GNF</div>`;
+                                    <div class="nouveau-prix">${Number(p.prix).toLocaleString()} GNF</div>
+                                    </div>`;
                     }
 
                     carte.innerHTML = `
