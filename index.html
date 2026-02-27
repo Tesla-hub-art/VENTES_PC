@@ -839,16 +839,16 @@ function productMatch(item, text) {
 
                     let prixHTML="";
                     const prixnormal=Number(p.prix);
-                    const prixpromo=p.prix_promo ? Number(p.prix_promo) : 0;
+                    const prixpromo=p.prixpromo ? Number(p.prixpromo) : 0;
 
                     if(prixpromo > 0 && prixpromo < prixnormal) {
                         // calcul du pourcentage de reduction
                         const reduction=Math.round(((prixnormal - prixpromo) / prixnormal) * 100);
-                        prixHTML=`
-                            <div class="bloc-prix">
+                        prixHTML=`<div class="bloc-prix" style="margin:10px 0;">
+                                 <div class="nouveau-prix promo style="color: #27ae60; font-weight: bold;font-size:1.2em;">${prixpromo.toLocaleString()} GNF<small class="badge-reduc">-${reduction}%</small></span>
+                                </div>
                                 <span class="ancien-prix">${prixnormal.toLocaleString()} GNF</span>
-                                <span class="nouveau-prix promo">${prixpromo.toLocaleString()} GNF<small class="badge-reduc">-${reduction}%</small></span>
-                                </div>`;
+                               `;
                     } else {
                         prixHTML=`<div class="bloc-prix">
                                     <span class="nouveau-prix">${prixnormal.toLocaleString()} GNF</span>
@@ -862,7 +862,7 @@ function productMatch(item, text) {
                         ${prixHTML}
                         <button onclick="addToCart(this)">Ajouter au panier🛒</button>
                         <a href="https://wa.me/224611476352?text=${encodeURIComponent("COMMANDE SHOPY\n\nProduit: " + p.nom +"\nPrix: " 
-                        +(p.prix_promo ? p.prix_promo : p.prix )+ "GNF")};
+                        +(p.prixpromo ? p.prixpromo : p.prix ) + "GNF")}
                         class="btn-whatsapp" target="_blank" style="display:block"; background:#25D366; color:white; padding:10px;
                         border-radius: 8px; text-decoration:none; margin-top:10px
                         text-align:center;">Commander via WhatsApp</a>`;
