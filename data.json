@@ -83,6 +83,79 @@
         "image":"Static/Images/hp5.jpg",
         "catégorie":"pc"
     },
+    {
+
+        "id":"PC003",
+        "nom":"HP elitbook",
+        "prix":2990000,
+        "specs":"Core i7,SSD 256GB,RAM 8GB",
+        "image":"Static/Images/hp6.jpg",
+        "catégorie":"pc"
+    },
+     {
+
+        "id":"PC003",
+        "nom":"LENOVO THINKPAD T460s",
+        "prix":2760000,
+        "specs":"Core i5,SSD 512GB,RAM 8GB",
+        "image":"Static/Images/lenovo3.jpg",
+        "catégorie":"pc"
+    },
+     {
+
+        "id":"PC003",
+        "nom":"DELL XPS",
+        "prix":3450000,
+        "specs":"Core i5,SSD 512GB,RAM 8GB",
+        "image":"Static/Images/dell2.jpg",
+        "catégorie":"pc"
+    },
+     {
+
+        "id":"PC003",
+        "nom":"MICROSOFT SURFACE GO",
+        "prix":4140000,
+        "specs":"Core i5,SSD 256GB,RAM 8GB",
+        "image":"Static/Images/dell3.jpg",
+        "catégorie":"pc"
+    },
+     {
+
+        "id":"PC003",
+        "nom":"DELL LATITUDE 5410",
+        "prix":3910000,
+        "specs":"Core i7,SSD 512GB,RAM 8GB",
+        "image":"Static/Images/hp6.jpg",
+        "catégorie":"pc"
+    },
+     {
+
+        "id":"PC003",
+        "nom":"HP 430 G6",
+        "prix":3105000,
+        "specs":"Core i5,SSD 512GB,RAM 8GB",
+        "image":"Static/Images/hp7.jpg",
+        "catégorie":"pc"
+    },
+     {
+
+        "id":"PC003",
+        "nom":"HP EliteBook Dragonfly pliable tactile",
+        "prix":4600000,
+        "specs":"Core i5,SSD 512GB,RAM 8GB",
+        "image":"Static/Images/hp8.jpg",
+        "catégorie":"pc"
+    },
+     {
+
+        "id":"PC003",
+        "nom":"DELL LATITUDE",
+        "prix":3450000,
+        "specs":"Core i7,SSD 512GB,RAM 8GB",
+        "image":"Static/Images/dell4.jpg",
+        "catégorie":"pc"
+    },
+
     
     {
          "LES CHARGEURS":"LA LISTE DES CHARGEURS",
