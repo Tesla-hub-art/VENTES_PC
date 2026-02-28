@@ -861,8 +861,8 @@ function productMatch(item, text) {
                         <p>${p.specs}</p>
                         ${prixHTML}
                         <button onclick="addToCart(this)">Ajouter au panier🛒</button>
-                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("COMMANDE SHOPY\n\n"+ "•" + p.nom.toUpperCase() + ":" +  
-                        (p.prixpromo ? p.prixpromo : p.prix ).toLocaleString() + "GNF\n\n" + "TOATAL : " + (p.prixpromo ? p.prixpromo : p.prix).toLocaleString() + "GNF")}"
+                        <a href="https://wa.me/224611476352?text=${encodeURIComponent("COMMANDE SHOPY\n\n"+ "• " + p.nom.toUpperCase() + " :" +  
+                        (p.prixpromo ? p.prixpromo : p.prix ).toLocaleString() + " GNF\n\n" + "TOATAL : " + (p.prixpromo ? p.prixpromo : p.prix).toLocaleString() + " GNF ")}"
                         class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>`;
 
                         conteneur.appendChild(carte);
