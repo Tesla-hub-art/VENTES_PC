@@ -115,6 +115,7 @@
         "id":"PC003",
         "nom":"MICROSOFT SURFACE GO",
         "prix":4140000,
+        "prixpromo":3312000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/dell3.jpg",
         "catégorie":"pc"
@@ -513,6 +514,14 @@
         "prix":432000,
         "specs":"Batterie de PC Dell ",
         "image":"Static/Images/Batterie/batdell1.jpg",
+        "catégorie":"batterie"
+    },
+    {
+        "id":"ACC001",
+        "nom":"BATTERIE DE PC",
+        "prix":432000,
+        "specs":"Batterie de PC Dell ",
+        "image":"Static/Images/Batterie/batdell2.jpg",
         "catégorie":"batterie"
     },
     {
