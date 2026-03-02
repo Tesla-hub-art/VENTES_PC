@@ -115,7 +115,6 @@
         "id":"PC003",
         "nom":"MICROSOFT SURFACE GO",
         "prix":4032000,
-        "prixpromo":3831000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/dell3.jpg",
         "catégorie":"pc"
