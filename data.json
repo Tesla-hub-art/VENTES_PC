@@ -78,7 +78,7 @@
 
         "id":"PC008",
         "nom":"HP EliteBook",
-        "prix":4485000,
+        "prix":4256000,
         "specs":"Core i5,SSD 512GB,RAM 16GB",
         "image":"Static/Images/hp5.jpg",
         "catégorie":"pc"
