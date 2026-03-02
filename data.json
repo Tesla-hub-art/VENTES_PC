@@ -6,7 +6,7 @@
 
         "id":"PC000",
         "nom":"DELL LATITUDE",
-        "prix":2990000,
+        "prix":2912000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/dell1.jpg",
         "catégorie":"pc"
@@ -15,7 +15,7 @@
 
         "id":"PC001",
         "nom":"VICTUS",
-        "prix":11155000,
+        "prix":10864000,
         "specs":"Core i5,SSD 512GB,RAM 16GB",
         "image":"Static/Images/victus.jpg",
         "catégorie":"pc"
@@ -24,7 +24,7 @@
 
         "id":"PC003",
         "nom":"LENOVO",
-        "prix":2530000,
+        "prix":2464000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/lenovo1.jpg",
         "catégorie":"pc"
@@ -33,7 +33,7 @@
 
         "id":"PC004",
         "nom":"HP",
-        "prix":3105000,
+        "prix":3024000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/hp1.jpg",
         "catégorie":"pc"
@@ -42,7 +42,7 @@
 
         "id":"PC005",
         "nom":"HP",
-        "prix":2760000,
+        "prix":2688000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/hp2.jpg",
         "catégorie":"pc"
@@ -51,7 +51,7 @@
 
         "id":"PC006",
         "nom":"HP elitbook",
-        "prix":3220000,
+        "prix":3136000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/hp3.jpg",
         "catégorie":"pc"
@@ -60,7 +60,7 @@
 
         "id":"PC006",
         "nom":"LENOVO",
-        "prix":3335000,
+        "prix":3248000,
         "specs":"Core i5,SSD 512GB,RAM 8GB",
         "image":"Static/Images/lenovo2.jpg",
         "catégorie":"pc"
@@ -69,7 +69,7 @@
 
         "id":"PC007",
         "nom":"HP Zbook",
-        "prix":5175000,
+        "prix":5040000,
         "specs":"Core i7,SSD 512GB,RAM 16GB",
         "image":"Static/Images/hp4.jpg",
         "catégorie":"pc"
@@ -87,7 +87,7 @@
 
         "id":"PC003",
         "nom":"HP elitbook",
-        "prix":2990000,
+        "prix":2912000,
         "specs":"Core i7,SSD 256GB,RAM 8GB",
         "image":"Static/Images/hp6.jpg",
         "catégorie":"pc"
@@ -96,7 +96,7 @@
 
         "id":"PC003",
         "nom":"LENOVO THINKPAD T460s",
-        "prix":2760000,
+        "prix":2688000,
         "specs":"Core i5,SSD 512GB,RAM 8GB",
         "image":"Static/Images/lenovo3.jpg",
         "catégorie":"pc"
@@ -105,7 +105,7 @@
 
         "id":"PC003",
         "nom":"DELL XPS",
-        "prix":3450000,
+        "prix":3360000,
         "specs":"Core i5,SSD 512GB,RAM 8GB",
         "image":"Static/Images/dell2.jpg",
         "catégorie":"pc"
@@ -114,8 +114,8 @@
 
         "id":"PC003",
         "nom":"MICROSOFT SURFACE GO",
-        "prix":4140000,
-        "prixpromo":3726000,
+        "prix":4032000,
+        "prixpromo":3831000,
         "specs":"Core i5,SSD 256GB,RAM 8GB",
         "image":"Static/Images/dell3.jpg",
         "catégorie":"pc"
@@ -124,16 +124,16 @@
 
         "id":"PC003",
         "nom":"DELL LATITUDE 5410",
-        "prix":3910000,
+        "prix":3808000,
         "specs":"Core i7,SSD 512GB,RAM 8GB",
-        "image":"Static/Images/hp6.jpg",
+        "image":"Static/Images/dell3.jpg",
         "catégorie":"pc"
     },
      {
 
         "id":"PC003",
         "nom":"HP 430 G6",
-        "prix":3105000,
+        "prix":3024000,
         "specs":"Core i5,SSD 512GB,RAM 8GB",
         "image":"Static/Images/hp7.jpg",
         "catégorie":"pc"
@@ -142,7 +142,7 @@
 
         "id":"PC003",
         "nom":"HP EliteBook Dragonfly pliable tactile",
-        "prix":4600000,
+        "prix":4480000,
         "specs":"Core i5,SSD 512GB,RAM 8GB",
         "image":"Static/Images/hp8.jpg",
         "catégorie":"pc"
@@ -151,7 +151,7 @@
 
         "id":"PC003",
         "nom":"DELL LATITUDE",
-        "prix":3450000,
+        "prix":3360000,
         "specs":"Core i7,SSD 512GB,RAM 8GB",
         "image":"Static/Images/dell4.jpg",
         "catégorie":"pc"
@@ -164,7 +164,7 @@
 
         "id":"PC002",
         "nom":"CHARGEUR",
-        "prix":202500,
+        "prix":225000,
         "specs":"Chargeur type c port v10",
         "image":"Static/Images/Chargeurs/c1.jpg",
         "catégorie":"chargeur"
@@ -172,7 +172,7 @@
     {
         "id":"PC002",
         "nom":"CHARGEUR",
-        "prix":202500,
+        "prix":225000,
         "specs":"Chargeur type c port v10",
         "image":"Static/Images/Chargeurs/c2.jpg",
         "catégorie":"chargeur"
@@ -188,25 +188,33 @@
     {
         "id":"PC002",
         "nom":"CHARGEUR",
-        "prix":100000,
+        "prix":135000,
         "specs":"Chargeur Box WI-FI",
         "image":"Static/Images/Chargeurs/c5.jpg",
         "catégorie":"chargeur"
     },
     {
         "id":"PC002",
-        "nom":"chargeur Box Wi-Fi",
-        "prix":100000,
-        "specs":"Chargeur USB pour Box WI-FI",
+        "nom":"CHARGEUR",
+        "prix":135000,
+        "specs":"Chargeur Box WI-FI",
         "image":"Static/Images/Chargeurs/c6.jpg",
         "catégorie":"chargeur"
     },
     {
         "id":"PC002",
-        "nom":"chargeurs d'ordinateurs",
-        "prix":100000,
+        "nom":"CHARGEUR",
+        "prix":135000,
         "specs":"Chargeur Box WI-FI",
         "image":"Static/Images/Chargeurs/c7.jpg",
+        "catégorie":"chargeur"
+    },
+    {
+        "id":"PC002",
+        "nom":"CHARGEUR",
+        "prix":135000,
+        "specs":"Chargeur PC Apple",
+        "image":"Static/Images/Chargeurs/c8.jpg",
         "catégorie":"chargeur"
     },
     {
@@ -215,7 +223,7 @@
 
         "id":"ACC001",
         "nom":"SUPPORT DE PC",
-        "prix":162000,
+        "prix":180000,
         "specs":"haute qualité",
         "image":"Static/Images/supports/s2.jpg",
         "catégorie":"support"
@@ -225,7 +233,7 @@
 
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":216000,
+        "prix":240000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a1.jpg",
         "catégorie":"adaptateur"
@@ -233,7 +241,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":216000,
+        "prix":240000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a3.jpg",
         "catégorie":"adaptateur"
@@ -241,7 +249,7 @@
      {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":351000,
+        "prix":390000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a4.jpg",
         "catégorie":"adaptateur"
@@ -249,7 +257,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":351000,
+        "prix":390000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a5.jpg",
         "catégorie":"adaptateur"
@@ -257,7 +265,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":351000,
+        "prix":390000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a6.jpg",
         "catégorie":"adaptateur"
@@ -265,7 +273,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":351000,
+        "prix":390000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a7.jpg",
         "catégorie":"adaptateur"
@@ -273,7 +281,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":351000,
+        "prix":390000,
         "specs":"Adaptateur 11 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a8.jpg",
         "catégorie":"adaptateur"
@@ -281,7 +289,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":216000,
+        "prix":240000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a9.jpg",
         "catégorie":"adaptateur"
@@ -289,7 +297,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":216000,
+        "prix":240000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a10.jpg",
         "catégorie":"adaptateur"
@@ -297,7 +305,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":216000,
+        "prix":240000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a10.jpg",
         "catégorie":"adaptateur"
@@ -305,7 +313,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":216000,
+        "prix":240000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a11.jpg",
         "catégorie":"adaptateur"
@@ -313,7 +321,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":216000,
+        "prix":240000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a12.jpg",
         "catégorie":"adaptateur"
@@ -321,7 +329,7 @@
     {
         "id":"A001",
         "nom":"ADAPTATEURS",
-        "prix":216000,
+        "prix":240000,
         "specs":"Adaptateur 8 en 1 pour phone et PC",
         "image":"Static/Images/Adaptateurs/a13.jpg",
         "catégorie":"adaptateur"
@@ -332,7 +340,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":148500,
+        "prix":165000,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h1.jpg",
         "catégorie":"hdmi"
@@ -341,7 +349,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":148500,
+        "prix":165000,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h2.jpg",
         "catégorie":"hdmi"
@@ -350,7 +358,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":148500,
+        "prix":165000,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h3.jpg",
         "catégorie":"hdmi"
@@ -359,7 +367,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":148500,
+        "prix":165000,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h4.jpg",
         "catégorie":"hdmi"
@@ -368,7 +376,7 @@
 
         "id":"ACC001",
         "nom":"HDMI",
-        "prix":148500,
+        "prix":165000,
         "specs":"Dongle HDMI vers Mini HDMI",
         "image":"Static/Images/HDMI/h5.jpg",
         "catégorie":"hdmi"
@@ -378,7 +386,7 @@
 
         "id":"A001",
         "nom":"POWER BANK",
-        "prix":180000,
+        "prix":255000,
         "specs":"Power bank 300.000 mah",
         "image":"Static/Images/power/p1.jpg",
         "catégorie":"power"
@@ -387,7 +395,7 @@
 
         "id":"A001",
         "nom":"POWER BANK",
-        "prix":180000,
+        "prix":255000,
         "specs":"Power bank 300.000 mah",
         "image":"Static/Images/power/p2.jpg",
         "catégorie":"power"
@@ -396,7 +404,7 @@
 
         "id":"A001",
         "nom":"POWER BANK",
-        "prix":160000,
+        "prix":225000,
         "specs":"Power bank 200.000 mah",
         "image":"Static/Images/power/p4.jpg",
         "catégorie":"power"
@@ -405,7 +413,7 @@
 
         "id":"A001",
         "nom":"POWER BANK",
-        "prix":160000,
+        "prix":225000,
         "specs":"Power bank 200.000 mah",
         "image":"Static/Images/power/p5.jpg",
         "catégorie":"power"
@@ -414,8 +422,8 @@
 
         "id":"A001",
         "nom":"POWER BANK",
-        "prix":230000,
-        "specs":"Power bank chargeable 500.000 mah",
+        "prix":300000,
+        "specs":"Power bank solaire 500.000 mah",
         "image":"Static/Images/power/p6.jpg",
         "catégorie":"power"
     },
@@ -423,8 +431,8 @@
 
         "id":"A001",
         "nom":"POWER BANK",
-        "prix":190000,
-        "specs":"Power bank chargeable au soleil 300.000 mah",
+        "prix":270000,
+        "specs":"Power bank solaire 300.000 mah",
         "image":"Static/Images/power/p8.jpg",
         "catégorie":"power"
     },
@@ -436,7 +444,7 @@
         "prix":180000,
         "specs":"Airpod AP6",
         "image":"Static/Images/airpod/pod1.jpg",
-        "catégorie":"power"
+        "catégorie":"airpod"
     },
     {
          "LES DISQUES":"LA LISTE DES DISQUES DURS",
@@ -452,8 +460,8 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR EXTERNE",
-        "prix":270000,
-        "specs":"Performence hhd",
+        "prix":300000,
+        "specs":"Performence hhd 500GB",
         "image":"Static/Images/Disques/dis1500.jpg",
         "catégorie":"disque"
     },
@@ -468,7 +476,7 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR INTERNE",
-        "prix":337000,
+        "prix":375000,
         "specs":"Performence ssd 256 Go",
         "image":"Static/Images/Disques/disint256.jpg",
         "catégorie":"disque"
@@ -476,7 +484,7 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR INTERNE",
-        "prix":675000,
+        "prix":750000,
         "specs":"Performence ssd 512 Go",
         "image":"Static/Images/Disques/disint500.jpg",
         "catégorie":"disque"
@@ -484,7 +492,7 @@
     {
      "id":"ACC001",
         "nom":"DISQUE DUR INTERNE",
-        "prix":675000,
+        "prix":750000,
         "specs":"Performence ssd 512 Go NVME",
         "image":"Static/Images/Disques/disint500.jpg",
         "catégorie":"disque"
@@ -495,7 +503,7 @@
 
         "id":"ACC001",
         "nom":"BATTERIE DE PC",
-        "prix":432000,
+        "prix":390000,
         "specs":"Batterie de PC hp",
         "image":"Static/Images/Batterie/bathp1.jpg",
         "catégorie":"batterie"
@@ -503,7 +511,7 @@
     {
         "id":"ACC001",
         "nom":"BATTERIE DE PC",
-        "prix":432000,
+        "prix":390000,
         "specs":"Batterie de PC Apple",
         "image":"Static/Images/Batterie/batapple1.jpg",
         "catégorie":"batterie"
@@ -511,7 +519,7 @@
     {
         "id":"ACC001",
         "nom":"BATTERIE DE PC",
-        "prix":432000,
+        "prix":390000,
         "specs":"Batterie de PC Dell ",
         "image":"Static/Images/Batterie/batdell1.jpg",
         "catégorie":"batterie"
@@ -519,7 +527,7 @@
     {
         "id":"ACC001",
         "nom":"BATTERIE DE PC",
-        "prix":432000,
+        "prix":390000,
         "specs":"Batterie de PC Dell ",
         "image":"Static/Images/Batterie/batdell2.jpg",
         "catégorie":"batterie"
@@ -527,7 +535,7 @@
     {
         "id":"ACC001",
         "nom":"BATTERIE DE PC",
-        "prix":432000,
+        "prix":390000,
         "specs":"Batterie de PC Lenovo ",
         "image":"Static/Images/Batterie/batleno.jpg",
         "catégorie":"batterie"
