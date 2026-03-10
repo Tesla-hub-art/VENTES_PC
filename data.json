@@ -211,7 +211,7 @@
     {
         "id":"PC002",
         "nom":"CHARGEUR",
-        "prix":135000,
+        "prix":250000,
         "specs":"Chargeur PC Apple",
         "image":"Static/Images/Chargeurs/c8.jpg",
         "catégorie":"chargeur"

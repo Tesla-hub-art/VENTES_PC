@@ -71,6 +71,21 @@
             gap: 15px;
             padding: 20px;
         }
+        /* RESPONSIVE : 4 colonnes sur mobile */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+/* Très petit écran : 2 colonnes */
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
         .produits-card {
                 background: #fff;
                 padding: 12px;
