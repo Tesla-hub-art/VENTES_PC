@@ -73,6 +73,27 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+        /* wrapper commun à header / container / footer */
+.wrapper,
+.container,
+.footer-content {
+    max-width: 1200px;   /* même valeur partout */
+    margin: 0 auto;      /* centrer horizontalement */
+    box-sizing: border-box;
+}
+
+/* s’assurer que le fond du header occupe bien toute la largeur */
+.header {
+    width: 100%;
+}
+
+/* ajustement : le footer-content utilisait 1100px, on unifie à 1200px */
+.footer-content {
+    max-width: 1200px;
+}
+
+/* si tu veux conserver 1100 pour le footer, adapte simplement la valeur
+   dans les 3 règles ci-dessus à 1100 */
         /* RESPONSIVE : 4 colonnes sur mobile */
 @media (max-width: 768px) {
     .container {
@@ -572,9 +593,11 @@
 
                 <!--AFFICHAGE DU LOGO DU SITE-->
                 
-                <div class="logo-container">
-                    <img src="Static/Images/logo_shopy.png" alt="SHOPY Logo">
-                </div>
+                <div class="wrapper">
+                    <div class="logo-container">
+                        <img src="Static/Images/logo_shopy.png" alt="SHOPY Logo">
+                    </div>
+                
 
         <!--ENTETE ET NOM DU MARCHE EN LIGNE ✅-->
 
@@ -650,7 +673,7 @@
          <nav class="nav">
             <a href="https://wa.me/611476352" target="_blank">WhatsApp</a>
         </nav>
-
+        </div>
      </header>
 
      <div class="search-container" style="display: block;visibility: visible;">
