@@ -102,6 +102,31 @@
             height: 140px;
             object-fit: contain;/* Evite de deformaer les images*/
         }
+        
+/* Sur mobile : réduire le padding des cartes */
+@media (max-width: 768px) {
+    .produits-card {
+        padding: 6px;
+    }
+    
+    .produits-card img {
+        height: 100px;
+    }
+    
+    .produits-card h3 {
+        font-size: 12px;
+    }
+    
+    .produits-card p {
+        font-size: 11px;
+    }
+    
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+        padding: 4px;
+    }
+}
         .produits-card h3 {
             font-size: 14px;
             margin: 8px 0;
