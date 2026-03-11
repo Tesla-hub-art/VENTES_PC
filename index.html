@@ -1030,6 +1030,13 @@
                 cart = [];
             }
             
+            // Clean old cart items without specs (from before the specs update)
+            cart = cart.map(item => ({
+                ...item,
+                specs: item.specs || ''
+            }));
+            localStorage.setItem("cart", JSON.stringify(cart));
+            
             // Fonction pour afficher les toast notifications
             function showToast(message, type = 'success') {
                 const container = document.getElementById('toast-container');
@@ -1193,11 +1200,11 @@ function productMatch(item, text) {
             document.getElementById("searchInput").addEventListener("input",(e) => {
                 const recherche=e.target.value.toLowerCase();
 
-                const trouves = tousMesProduits.filter(p => p.nom.toLowerCase().includes(recherche) || p.nom.toLowerCase().includes(recherche));
+                const trouves = mesProduitsGlobal.filter(p => p.nom.toLowerCase().includes(recherche) || p.specs.toLowerCase().includes(recherche));
 
                 afficherProduits(trouves);
             });
-            window.onload=chargerCatalogue;
+            // window.onload=chargerCatalogue; // Removed - fetch handles loading automatically
 
             // LA FONCTION POUR REDIRIGER VERS LE PANIER✅
 
