@@ -1107,19 +1107,7 @@ function productMatch(item, text) {
                 });
             }
 
-            async function chargerCatalogue() {
-                try {
-                    const reponse = await fetch ('data.json'); // Elle lit le fichier .json
-                    const produits = await reponse.json(); // Elle transforme le texte en liste
-                    afficherProduits(produits); // Elle envoie la liste à l'affichage
-                } catch (erreur) {
-                    console.error("Erreur de chargement:",erreur);
-                    
-                }
-                // ON DIT AU SITE DE LANSER LE CHARGEMENT DES QU'IL S'OUVRE
-
-                window.onload = chargerCatalogue;
-            }
+            /* ancienne fonction chargerCatalogue supprimée, le chargement est géré par le fetch principal plus haut */
             // FONCTION AFFICHER LES PRODUITS
 
             function afficherProduits(produits) {
