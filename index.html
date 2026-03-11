@@ -1000,6 +1000,43 @@
             if(!Array.isArray(cart)) {
                 cart = [];
             }
+            
+            // Fonction pour afficher les toast notifications
+            function showToast(message, type = 'success') {
+                const container = document.getElementById('toast-container');
+                if(!container) return;
+                const toast = document.createElement('div');
+                toast.className = `toast ${type}`;
+                
+                const icons = {
+                    success: '✓',
+                    error: '❌',
+                    warning: '⚠️'
+                };
+                
+                toast.textContent = (icons[type] || '') + ' ' + message;
+                container.appendChild(toast);
+                
+                // Auto remove après 3 secondes
+                setTimeout(() => {
+                    toast.classList.add('hide');
+                    setTimeout(() => toast.remove(), 300);
+                }, 3000);
+            }
+            
+            // Fonction pour mettre à jour le compteur du panier
+            function updateCartCount() {
+                const count = cart.length;
+                const badge = document.getElementById('cart-count');
+                if(badge) {
+                    badge.textContent = count;
+                    if(count === 0) {
+                        badge.style.display = 'none';
+                    } else {
+                        badge.style.display = 'flex';
+                    }
+                }
+            }
 
             // 1. Variable globale pour garder les produits en mémoire
 let mesProduitsGlobal = []; 
@@ -1152,38 +1189,105 @@ function productMatch(item, text) {
             }
 
             // LA FONCTION POUR AJOUTER AU PANIER✅
+            // Structure: {name, price, quantity}
 
             function addToCart(button) {
-                const card =button.closest(".produits-card");
-
+                const card = button.closest(".produits-card");
                 const name = card.dataset.nom;
-                const price=parseInt(card.dataset.prix);
-                cart.push({name:name, price:price});
-                localStorage.setItem("cart",JSON.stringify(cart));
+                const price = parseInt(card.dataset.prix);
+                
+                // Vérifier si le produit existe déjà dans le panier
+                const existingItem = cart.find(item => item.name === name && item.price === price);
+                
+                if(existingItem) {
+                    existingItem.quantity = (existingItem.quantity || 1) + 1;
+                } else {
+                    cart.push({name: name, price: price, quantity: 1});
+                }
+                
+                localStorage.setItem("cart", JSON.stringify(cart));
                 updateCart();
+                updateCartCount();
+                showToast(`${name} ajouté au panier ✓`);
             }
 
-            // LA FONCTION POUR ENREGISTRER LE PANIER
+            // LA FONCTION POUR ENREGISTRER LE PANIER ET L'AFFICHER
 
             function updateCart() {
-                const list=document.getElementById("cart-items");
-                const totalSpan=document.getElementById("cart-total");
-           
+                const list = document.getElementById("cart-items");
+                const totalSpan = document.getElementById("cart-total");
+                
+                if(!list || !totalSpan) return;
 
-                list.innerHTML ="";
+                list.innerHTML = "";
                 let total = 0;
-                cart.forEach((item,index) => {
-                const li =document.createElement("li");
-                li.textContent = `${item.name} - ${item.price.toLocaleString()} GNF`;
-                list.appendChild(li);
-
-                // On additionne le prix au total
-
-                total += item.price;
+                
+                if(cart.length === 0) {
+                    list.innerHTML = '<div class="cart-empty">Le panier est vide 💭</div>';
+                    totalSpan.innerText = "0 GNF";
+                    return;
+                }
+                
+                cart.forEach((item, index) => {
+                    const quantity = item.quantity || 1;
+                    const subtotal = item.price * quantity;
+                    total += subtotal;
+                    
+                    const li = document.createElement("li");
+                    li.className = "cart-item";
+                    li.innerHTML = `
+                        <div class="cart-item-info">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-price">${item.price.toLocaleString()} GNF/unité</div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <button onclick="decrementQty(${index})">−</button>
+                            <span>${quantity}</span>
+                            <button onclick="incrementQty(${index})">+</button>
+                        </div>
+                        <div class="cart-item-subtotal">${subtotal.toLocaleString()} GNF</div>
+                        <button class="cart-item-delete" onclick="removeItem(${index})">Supprimer</button>
+                    `;
+                    list.appendChild(li);
                 });
 
                 totalSpan.innerText = total.toLocaleString() + " GNF";
-             }
+            }
+            
+            // Fonction pour augmenter la quantité
+            function incrementQty(index) {
+                if(cart[index]) {
+                    cart[index].quantity = (cart[index].quantity || 1) + 1;
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    updateCart();
+                    updateCartCount();
+                }
+            }
+            
+            // Fonction pour diminuer la quantité
+            function decrementQty(index) {
+                if(cart[index]) {
+                    const newQty = (cart[index].quantity || 1) - 1;
+                    if(newQty > 0) {
+                        cart[index].quantity = newQty;
+                    } else {
+                        cart.splice(index, 1);
+                    }
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    updateCart();
+                    updateCartCount();
+                }
+            }
+            
+            // Fonction pour supprimer un item
+            function removeItem(index) {
+                const itemName = cart[index]?.name || "Produit";
+                cart.splice(index, 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                updateCart();
+                updateCartCount();
+                showToast(`${itemName} retiré du panier`);
+            }
              // FONCTION POUR AFFICHER LES VIDEOS
 
              function toggleVideoReviews() {
