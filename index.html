@@ -846,20 +846,24 @@
         
          <!--CLASSEMENT DES PRODUITS PAR CATEGORIE ✅-->
 
-        <div class="categories" style="text-align: center; margin-bottom: 20px;">
-        <button onclick="filterCategory('all')">TOUT</button>
-        <button onclick="filterCategory('pc')">PC</button>
-        <button onclick="filterCategory('support')">SUPPORTS</button>
-        <button onclick="filterCategory('chargeur')">CHARGEURS</button>
-        <button onclick="filterCategory('power')">POWER BANK</button>
-        <button onclick="filterCategory('adaptateur')">ADAPTATEURS</button>
-        <button onclick="filterCategory('hdmi')">HDMI mini</button>
-        <button onclick="filterCategory('airpod')">AIRPOD</button>
-        <button onclick="filterCategory('disque')">DISQUES DURS</button>
-        <button onclick="filterCategory('batterie')">BATTERIES PC</button>
-
-
-        <button onclick="goToCart()">MON PANIER 🛒</button>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div class="categories" style="text-align: center; flex: 1;">
+            <button onclick="filterCategory('all')">TOUT</button>
+            <button onclick="filterCategory('pc')">PC</button>
+            <button onclick="filterCategory('support')">SUPPORTS</button>
+            <button onclick="filterCategory('chargeur')">CHARGEURS</button>
+            <button onclick="filterCategory('power')">POWER BANK</button>
+            <button onclick="filterCategory('adaptateur')">ADAPTATEURS</button>
+            <button onclick="filterCategory('hdmi')">HDMI mini</button>
+            <button onclick="filterCategory('airpod')">AIRPOD</button>
+            <button onclick="filterCategory('disque')">DISQUES DURS</button>
+            <button onclick="filterCategory('batterie')">BATTERIES PC</button>
+            </div>
+            
+            <div class="cart-icon-container" onclick="goToCart()" title="Voir le panier">
+                🛒
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
        </div>
 
        <!--LE MENU DE NAVIGATION-->
