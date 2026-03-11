@@ -1155,6 +1155,7 @@ function productMatch(item, text) {
 
                     carte.setAttribute('data-nom', p.nom);
                     carte.setAttribute('data-prix', p.prix);
+                    carte.setAttribute('data-specs', p.specs);
 
                     let prixHTML="";
                     const prixnormal=Number(p.prix);
@@ -1212,14 +1213,15 @@ function productMatch(item, text) {
                 const card = button.closest(".produits-card");
                 const name = card.dataset.nom;
                 const price = parseInt(card.dataset.prix);
+                const specs = card.dataset.specs || ''; // retrieve specs
                 
                 // Vérifier si le produit existe déjà dans le panier
-                const existingItem = cart.find(item => item.name === name && item.price === price);
+                const existingItem = cart.find(item => item.name === name && item.price === price && item.specs === specs);
                 
                 if(existingItem) {
                     existingItem.quantity = (existingItem.quantity || 1) + 1;
                 } else {
-                    cart.push({name: name, price: price, quantity: 1});
+                    cart.push({name: name, price: price, specs: specs, quantity: 1});
                 }
                 
                 localStorage.setItem("cart", JSON.stringify(cart));
@@ -1252,9 +1254,10 @@ function productMatch(item, text) {
                     
                     const li = document.createElement("li");
                     li.className = "cart-item";
+                    const displayName = item.specs ? `${item.name} (${item.specs})` : item.name;
                     li.innerHTML = `
                         <div class="cart-item-info">
-                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-name">${displayName}</div>
                             <div class="cart-item-price">${item.price.toLocaleString()} GNF/unité</div>
                         </div>
                         <div class="cart-item-quantity">
@@ -1332,11 +1335,14 @@ function productMatch(item, text) {
                 let totalGlobal = 0;
 
 
-                // ON AJOUTE CHAQUE PRODUIT DU PANIER
+                // ON AJOUTE CHAQUE PRODUIT DU PANIER AVEC LES SPECS
 
                 cart.forEach(item => {
-                message += `- ${item.name} : ${item.price.toLocaleString()} GNF\n`;
-                totalGlobal += item.price;
+                const quantity = item.quantity || 1;
+                const subtotal = item.price * quantity;
+                const productLine = item.specs ? `${item.name} (${item.specs})` : item.name;
+                message += `- ${productLine} x${quantity} : ${subtotal.toLocaleString()} GNF\n`;
+                totalGlobal += subtotal;
                 });
                 message += `\n*TOTAL: ${totalGlobal.toLocaleString()} GNF*`
 
