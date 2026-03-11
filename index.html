@@ -215,17 +215,24 @@
 }
           .categories {
             display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 30px;
-            flex-wrap: wrap;
-          }
+            justify-content: flex-start;
+            gap: 10px;
+            margin: 20px auto;
+            overflow-x: auto;
+            padding: 0 10px;
+            -webkit-overflow-scrolling: touch; /* smooth scroll on iOS/Android */
+            scrollbar-width: none; /* firefox */
+        }
+        .categories::-webkit-scrollbar {
+            display: none; /* hide scrollbar on webkit */
+        }
 
           .categories button {
+            flex: 0 0 auto;
             background: #f8f9fa;
             color: #333;
             border: 1px solid #ddd;
-            padding: 10px 25px;
+            padding: 8px 20px;
             border-radius: 50px; /*Boutons Arrondis Pillule*/
             font-weight: 600;
             text-transform: uppercase;
@@ -233,17 +240,18 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-          }
-          .categories.button:hover {
+            white-space: nowrap;
+        }
+        .categories button:hover {
             background: #007bff;
             color: white;
             border-color: #007bff;
-            transform: translateY(-3px);/* Petit saut vers le haut*/
+            transform: translateY(-2px);/* Petit saut vers le haut*/
             box-shadow: 0 4px 12px rgba(0,123,255,0.3);
-          }
-          .categories button:active {
+        }
+        .categories button:active {
             transform: scale(0.95);
-          }
+        }
 
           /*- Container pour aligner les boutons*/
 
@@ -846,8 +854,8 @@
         
          <!--CLASSEMENT DES PRODUITS PAR CATEGORIE ✅-->
 
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-            <div class="categories" style="text-align: center; flex: 1;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <div class="categories" style="flex: 1;">
             <button onclick="filterCategory('all')">TOUT</button>
             <button onclick="filterCategory('pc')">PC</button>
             <button onclick="filterCategory('support')">SUPPORTS</button>
@@ -858,6 +866,7 @@
             <button onclick="filterCategory('airpod')">AIRPOD</button>
             <button onclick="filterCategory('disque')">DISQUES DURS</button>
             <button onclick="filterCategory('batterie')">BATTERIES PC</button>
+            <button onclick="filterCategory('all')" style="display:none;" id="more-categories-toggler">+</button>
             </div>
             
             <div class="cart-icon-container" onclick="goToCart()" title="Voir le panier">
