@@ -660,6 +660,7 @@
     margin: 40px auto;
     max-width: 900px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    overflow-x: auto; /* ensure internal content cannot break container */
 }
 
 #cart h3 {
@@ -680,6 +681,7 @@
     border-radius: 10px;
     margin-bottom: 12px;
     transition: all 0.3s ease;
+    flex-wrap: wrap; /* allow items to drop on narrow screens */
 }
 
 .cart-item:hover {
@@ -708,6 +710,24 @@
     align-items: center;
     gap: 10px;
     margin: 0 20px;
+}
+
+/* ensure elements inside cart row behave well on small widths */
+.cart-item-info {
+    flex: 1 1 200px; /* take available space but can shrink */
+    min-width: 0; /* allow text to wrap */
+}
+.cart-item-name {
+    overflow-wrap: break-word;
+}
+.cart-item-quantity,
+.cart-item-subtotal,
+.cart-item-delete {
+    flex: 0 0 auto; /* don't grow or shrink unexpectedly */
+}
+.cart-item-delete {
+    margin-left: 10px;
+    flex-shrink: 0;
 }
 
 .cart-item-quantity button {
