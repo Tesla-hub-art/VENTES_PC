@@ -1401,18 +1401,13 @@ function productMatch(item, text) {
 
             function confirmerVider() {
                 // on vide la liste
-                cart =[];
+                cart = [];
                 // on sauvegarde le vide
                 localStorage.removeItem('cart');
-                console.log("Localstorage vidé");
-                // on met à jour l'affichage
-                if (typeof updateCart === "function") {
-                    updateCart();
-                    console.log("Affichage mis à jour");
-                }else{
-                    console.error("La fonction updatecart est introuvable !");
-                }
-                
+                // met à jour l'affichage et le compteur
+                updateCart();
+                updateCartCount();
+                showToast("Panier vidé avec succès");
                 // on ferme la fenêtre
                 fermerModalVider();
             }
