@@ -217,6 +217,38 @@
         "catégorie":"chargeur"
     },
     {
+        "id":"PC002",
+        "nom":"CHARGEUR",
+        "prix":150000,
+        "specs":"Chargeur de PC Dell",
+        "image":"Static/Images/Chargeurs/cdell.jpg",
+        "catégorie":"chargeur"
+    },
+    {
+        "id":"PC002",
+        "nom":"CHARGEUR",
+        "prix":225000,
+        "specs":"Chargeur de PC Dell Type USB",
+        "image":"Static/Images/Chargeurs/cdellusb1.jpg",
+        "catégorie":"chargeur"
+    },
+    {
+        "id":"PC002",
+        "nom":"CHARGEUR",
+        "prix":150000,
+        "specs":"Chargeur de PC Lenovo",
+        "image":"Static/Images/Chargeurs/cle2.jpg",
+        "catégorie":"chargeur"
+    },
+    {
+        "id":"PC002",
+        "nom":"CHARGEUR",
+        "prix":150000,
+        "specs":"Chargeur de PC Lenovo",
+        "image":"Static/Images/Chargeurs/cle3.jpg",
+        "catégorie":"chargeur"
+    },
+    {
          "LES SUPPORTS":"LA LISTE DES SUPPORTS DE PC",
 
 
