@@ -468,16 +468,6 @@
         "catégorie":"power"
     },
     {
-        "LES AIRPOD":"LA LISTE DES AIRPOD",
-
-        "id":"A001",
-        "nom":"AIRPOD",
-        "prix":180000,
-        "specs":"Airpod AP6",
-        "image":"Static/Images/airpod/pod1.jpg",
-        "catégorie":"airpod"
-    },
-    {
          "LES DISQUES":"LA LISTE DES DISQUES DURS",
 
 
@@ -570,7 +560,35 @@
         "specs":"Batterie de PC Lenovo ",
         "image":"Static/Images/Batterie/batleno.jpg",
         "catégorie":"batterie"
+    },
+    {
+         "LES COFFRETS":"LA LISTE DES COFFRETS DE DISQUE",
+
+
+        "id":"ACC001",
+        "nom":"COFFRET DE DISQUE",
+        "prix":112000,
+        "specs":"Coffret de disque dur externe",
+        "image":"Static/Images/coffret/cof1.jpg",
+        "catégorie":"coffre"
+    },
+    {
+        "id":"ACC001",
+        "nom":"COFFRET DE DISQUE",
+        "prix":112000,
+        "specs":"Coffret de disque dur externe",
+        "image":"Static/Images/coffret/cof2.jpg",
+        "catégorie":"coffre"
+    },
+    {
+        "id":"ACC001",
+        "nom":"COFFRET DE DISQUE",
+        "prix":112000,
+        "specs":"Coffret de disque dur externe",
+        "image":"Static/Images/coffret/cof3.jpg",
+        "catégorie":"coffre"
     }
+
 
        
 ]
