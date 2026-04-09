@@ -155,6 +155,15 @@
         "image":"Static/Images/dell4.jpg",
         "catégorie":"pc"
     },
+    {
+
+        "id":"PC003",
+        "nom":"LENOVO THINKPAD",
+        "prix":3192000,
+        "specs":"Core i5,SSD 512GB,RAM 8GB",
+        "image":"Static/Images/lenovo4.jpg",
+        "catégorie":"pc"
+    },
 
     
     {
@@ -515,7 +524,7 @@
         "nom":"DISQUE DUR INTERNE",
         "prix":750000,
         "specs":"Performence ssd 512 Go NVME",
-        "image":"Static/Images/Disques/disint500.jpg",
+        "image":"Static/Images/Disques/disint500nvme.jpg",
         "catégorie":"disque"
     },
     {
